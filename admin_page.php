@@ -12,7 +12,6 @@
 <style>
 body {
   font-family: "Lato", sans-serif;
-  overflow:hidden;
 }
 
 .sidenav {
