@@ -10,7 +10,7 @@
          die("Connection Failed!" . mysqli_connect_error()); 
       }
       //mysql query 
-      $query_select = "SELECT * from emp_basic_info where emp_num = '666666';";
+      $query_select = "SELECT * from emp_basic_info where emp_num = '1';";
       $query_database = mysqli_query($conn,$query_select);
       $row = mysqli_fetch_array($query_database);
 ?>

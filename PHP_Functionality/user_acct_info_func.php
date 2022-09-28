@@ -10,12 +10,12 @@
          die("Connection Failed!" . mysqli_connect_error()); 
       }
             //mysql query select from emp_basic_info
-            $query_select2 = "SELECT * from emp_basic_info where emp_num = '666666';";
+            $query_select2 = "SELECT * from emp_basic_info where emp_num = '1';";
             $query_database2 = mysqli_query($conn,$query_select2);
             $row2 = mysqli_fetch_array($query_database2);
 
             //mysql query select from user_account_tbl
-            $query_select3 = "SELECT * from user_account_tbl where emp_num = '666666';";
+            $query_select3 = "SELECT * from user_account_tbl where emp_num = '1';";
             $query_database3 = mysqli_query($conn,$query_select3);
             $row3 = mysqli_fetch_array($query_database3);
             

@@ -50,7 +50,6 @@
         
             if(isset($_POST['save_btn']))
             {
-
                   if(mysqli_query($conn,$query_insert) == true)
                   {
                         //upload pic

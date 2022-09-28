@@ -43,7 +43,6 @@
                               echo "<script> window.location.href='../Employee_payroll_list.php'; </script>";
                         }
                   }
-
                   else
                   {
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
