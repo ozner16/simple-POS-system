@@ -15,7 +15,6 @@
 
       }
 
-
       //mysql query 
       
       if(isset($_POST['username']) && isset($_POST['key']))
@@ -25,7 +24,6 @@
             $user = $_POST['username'];
             $pass = $_POST['key'];
             
-
             //finding user and pass in user_account_tbl
             $query_select = "SELECT * from user_account_tbl WHERE username = '$user' AND user_password= '$pass';";
             $query_database = mysqli_query($conn,$query_select);
