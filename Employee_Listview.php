@@ -90,12 +90,12 @@ tr{cursor: pointer;}
 $(document).ready(function(){
 
   $('table tr').on('click', 'td', function () {
-     window.location.href = "http://localhost/Web%20Development%20_Original/update_employee.php";
+     window.location.href = "./update_employee.php";
 })
 
 
   $("#new_emp_btn").click(function() {
-      window.location.href = "http://localhost/Web%20Development%20_Original/New_Emp_registration.php";
+      window.location.href = "./New_Emp_registration.php";
 	});
 
 

@@ -42,25 +42,25 @@
                         if($user_type == 'Admin')
                         {
 
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/admin_page.php'; </script>";
+                              echo "<script> window.location.href='../admin_page.php'; </script>";
 
                         }
                         elseif($user_type == 'Cashier1')
                         {
 
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/web1.php'; </script>";
+                              echo "<script> window.location.href='../web1.php'; </script>";
 
                         }
                         elseif($user_type == 'Cashier2')
                         {
 
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/web3_2nd.php'; </script>";
+                              echo "<script> window.location.href='../web3_2nd.php'; </script>";
 
                         }
                         elseif($user_type == 'Accounting_Staff')
                         {
   
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/Employee_payroll_list.php'; </script>";
+                              echo "<script> window.location.href='../Employee_payroll_list.php'; </script>";
 
                         }
 
@@ -70,7 +70,7 @@
                   {
 
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/'; </script>";
+                        echo "<script> window.location.href='../index.php'; </script>";
                        
                   
                   }

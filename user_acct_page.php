@@ -88,7 +88,7 @@ tr{cursor: pointer;}
 $(document).ready(function(){
 
   $('table tr').on('click', 'td', function () {
-   window.location.href = "http://localhost/Web%20Development%20_Original/user_acct_info.php";
+   window.location.href = "./user_acct_info.php";
 })
 
 //end of $(document).ready(function(){ ---

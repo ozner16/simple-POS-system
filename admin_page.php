@@ -64,12 +64,12 @@ a{
   <a id="PoS_A">Point of Sale A</a>
   <a id="PoS_B">Point of Sale B</a>
   <a id="user_acct">User Account</a>
-  <a id="logout" href="http://localhost/Web%20Development%20_Original/">Logout</a>
+  <a id="logout" href="./index.php">Logout</a>
 </div>
 
 <div class="main" style="height: 800px; width:101%">
 
-    <iframe id="frame"  width="100%" height="100%" src="http://localhost/Web%20Development%20_Original/homepage.php" frameborder="0" scrolling="auto" allowfullscreen>
+    <iframe id="frame"  width="100%" height="100%" src="./homepage.php" frameborder="0" scrolling="auto" allowfullscreen>
     </iframe>
 </div>
    
@@ -80,27 +80,27 @@ a{
 $(document).ready(function(){
 
   $("#home").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/homepage.php";
+		document.getElementById('frame').src = "./homepage.php";
 	});
 
   $("#employee").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/Employee_Listview.php";
+		document.getElementById('frame').src = "./Employee_Listview.php";
 	});
 
   $("#payroll").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/Employee_payroll_list.php";
+		document.getElementById('frame').src = "./Employee_payroll_list.php";
 	});
 
   $("#PoS_A").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/web1.php";
+		document.getElementById('frame').src = "./web1.php";
 	});
 
   $("#PoS_B").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/web3_2nd.php";
+		document.getElementById('frame').src = "./web3_2nd.php";
 	});
 
   $("#user_acct").click(function() {
-		document.getElementById('frame').src = "http://localhost/Web%20Development%20_Original/user_acct_page.php";
+		document.getElementById('frame').src = "./user_acct_page.php";
 	});
 
  

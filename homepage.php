@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="index.html">R&Z CLOTHING STORE</a></h1>
+      <h1 class="logo"><a href="./index.html">R&Z CLOTHING STORE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -63,14 +63,6 @@
   <label class="text2"><i>The New Way to Display Your Fashion</i></label>
 
 
-
-
-
-
-
-
-
-  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>

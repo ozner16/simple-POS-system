@@ -104,7 +104,7 @@
                         }
 
                         echo'<script>alert("Data is successfully inserted to the database.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/New_Emp_registration.php'; </script>";
+                        echo "<script> window.location.href='../New_Emp_registration.php'; </script>";
                         
                   }
 
@@ -113,7 +113,7 @@
                       
                        
                         echo'<script>alert("Error ! No data inserted to the database.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/New_Emp_registration.php'; </script>";
+                        echo "<script> window.location.href='../New_Emp_registration.php'; </script>";
                         
 
                    
@@ -124,7 +124,7 @@
             if(isset($_POST['cancel_btn']))
             {
 
-                  echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/New_Emp_registration.php'; </script>";
+                  echo "<script> window.location.href='../New_Emp_registration.php'; </script>";
                   
 
             }

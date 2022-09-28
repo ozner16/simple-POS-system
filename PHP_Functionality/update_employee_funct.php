@@ -77,7 +77,7 @@
                         mysqli_query($conn,$query_update);
 
                         echo'<script>alert("Data is successfully updated.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/update_employee.php'; </script>";
+                        echo "<script> window.location.href='../update_employee.php'; </script>";
 
                   }
 
@@ -86,7 +86,7 @@
 
 
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/update_employee.php'; </script>";
+                        echo "<script> window.location.href='../update_employee.php'; </script>";
 
                   }
  
@@ -106,7 +106,7 @@
                         mysqli_query($conn,$query_delete);
 
                         echo'<script>alert("Data is successfully deleted.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/update_employee.php'; </script>";
+                        echo "<script> window.location.href='../update_employee.php'; </script>";
 
                   }
 
@@ -115,7 +115,7 @@
 
 
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/update_employee.php'; </script>";
+                        echo "<script> window.location.href='../update_employee.php'; </script>";
 
                   }
  
@@ -128,7 +128,7 @@
             if(isset($_POST['cancel_btn']))
             {
 
-                  echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/update_employee.php'; </script>";
+                  echo "<script> window.location.href='../update_employee.php'; </script>";
 
                   
 

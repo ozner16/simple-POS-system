@@ -29,9 +29,6 @@
 
 <!-- JS file/s -->
 
-<script src=""></script>
-
-
 <?php
     include("PHP_Functionality/update_employee_funct.php");
 ?>

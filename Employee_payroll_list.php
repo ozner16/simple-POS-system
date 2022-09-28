@@ -84,7 +84,7 @@
 $(document).ready(function(){
 
   $('table tr').on('click', 'td', function () {
-   window.location.href = "http://localhost/Web%20Development%20_Original/web2.php";
+   window.location.href = "./web2.php";
 })
 
 //end of $(document).ready(function(){ ---

@@ -70,7 +70,7 @@
                         mysqli_query($conn,$query_update);
 
                         echo'<script>alert("Data is successfully updated.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_page.php'; </script>";
+                        echo "<script> window.location.href='../user_acct_page.php'; </script>";
 
                   }
 
@@ -79,7 +79,7 @@
                         if($_POST['emp_number'] == '')
                         {
                               echo'<script>alert("Employee Number must be filled.")</script>';
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_info.php'; </script>";
+                              echo "<script> window.location.href='../user_acct_info.php'; </script>";
 
                         }
                         else
@@ -87,7 +87,7 @@
                               mysqli_query($conn,$query_insert);
 
                               echo'<script>alert("Data is successfully updated.")</script>';
-                              echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_page.php'; </script>";
+                              echo "<script> window.location.href='../user_acct_page.php'; </script>";
 
                         }
                         
@@ -111,7 +111,7 @@
                         mysqli_query($conn,$query_delete1);
 
                         echo'<script>alert("Data is successfully deleted.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_page.php'; </script>";
+                        echo "<script> window.location.href='../user_acct_page.php'; </script>";
 
                   }
 
@@ -120,7 +120,7 @@
 
 
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
-                        echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_info.php'; </script>";
+                        echo "<script> window.location.href='../user_acct_info.php'; </script>";
 
                   }
  
@@ -133,7 +133,7 @@
             if(isset($_POST['cancel_btn']))
             {
 
-                  echo "<script> window.location.href='http://localhost/Web%20Development%20_Original/user_acct_info.php'; </script>";
+                  echo "<script> window.location.href='../user_acct_info.php'; </script>";
 
                   
 
