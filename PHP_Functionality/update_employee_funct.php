@@ -5,28 +5,18 @@
       $userN="root";
       $passW="";
       $databaseName="web_development";
-
       $conn = mysqli_connect($servername,$userN,$passW,$databaseName);
-
       if(!$conn)
       {
-
          die("Connection Failed!" . mysqli_connect_error()); 
-
       }
-
       //mysql query select from emp_basic_info
       $query_select2 = "SELECT * from emp_basic_info where emp_num = '12345';";
       $query_database2 = mysqli_query($conn,$query_select2);
       $row2 = mysqli_fetch_array($query_database2);
-
-
-      //mysql query 
-      
+      //mysql query      
       if(isset($_POST['Employee_Number']))
       {
-
-
             $emp_num = $_POST['Employee_Number'];
             $dept = $_POST['Department'];
             $F_name = $_POST['First_Name'];
@@ -51,9 +41,7 @@
             $state_province = $_POST['State_Province'];
             $country = $_POST['Country'];
             $zip_code = $_POST['Zip_Code'];
-
-
-            
+           
             $query_update = "UPDATE emp_basic_info SET dept= '$dept', F_name='$F_name', M_name='$M_name', L_name='$L_name', civil_status= '$civil_status', designation= '$designation', 
             Q_D_status= '$Q_D_status', paydate='$paydate', emp_status='$emp_status', suffix= '$suffix', birthdate= '$birthdate', gender= '$gender', nationality= '$nationality', 
             contact_num= '$contact_num', email= '$email', other_socmedia= '$other_socmedia', socmedia_id= '$socmedia_id', address_line1= '$address_line1',
@@ -65,85 +53,39 @@
             $query_select = "SELECT * from emp_basic_info WHERE emp_num = '$emp_num';";
             $query_database = mysqli_query($conn,$query_select);
             $row = mysqli_fetch_array($query_database);
-        
-   
+           
             if(isset($_POST['update_btn']))
             {
-
-                  
+                 
                   if($row > 0 )
                   {
-
                         mysqli_query($conn,$query_update);
-
                         echo'<script>alert("Data is successfully updated.")</script>';
                         echo "<script> window.location.href='../update_employee.php'; </script>";
-
                   }
-
                   else
                   {
-
-
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
                         echo "<script> window.location.href='../update_employee.php'; </script>";
-
                   }
- 
-
-               
-         
             }
-
-
             if(isset($_POST['delete_btn']))
             {
-
-                  
                   if($row > 0 )
                   {
-
                         mysqli_query($conn,$query_delete);
-
                         echo'<script>alert("Data is successfully deleted.")</script>';
                         echo "<script> window.location.href='../update_employee.php'; </script>";
-
                   }
-
                   else
                   {
-
-
                         echo'<script>alert("Error ! No such Data Exists.")</script>';
                         echo "<script> window.location.href='../update_employee.php'; </script>";
-
                   }
- 
-
-               
-         
             }
-            
-            
             if(isset($_POST['cancel_btn']))
             {
-
                   echo "<script> window.location.href='../update_employee.php'; </script>";
-
-                  
-
             }            
-
-
-
-
-
-   
-      
       } 
-        
-   
-
-
-
 ?>
