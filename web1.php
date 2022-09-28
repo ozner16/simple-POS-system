@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -28,7 +27,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="JS/web1_jscript.js"></script>
   
-
 </head>
 
 <body>
@@ -49,18 +47,12 @@
           <li><a href="contact.html">Contacts</a></li>
         </ul> -->
       </nav><!-- .nav-menu -->
-
-     
     </div>
 
   </header><!-- End Header -->
-
-
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
         <div class="box1">        <!------ FIRST-A (MAIN CONTAINER) ---->
-
 
             <h5>Categories</h5>
 
@@ -68,21 +60,15 @@
             <br/>
             <input type="radio" name="gender" class="genButton" /> <label>Female</label>
 
-
             <div class="ImageCont">   <!------ FIRST-D (MAIN CONTAINER) ---->
-
-
-
                 <div class="ImagePlat">   <!------ FIRST-E (MAIN CONTAINER) ---->
                       
-                    
                       <img src="assets/img/Jeans/Baggy Taper.png" alt="Baggy Taper" class="images" id="slot1"> 
                       <br/>
                       <input type="checkbox" name="Baggy_Taper" id="checkbox1"/>
                       <strong><label class="txtImage" id="txt1">Baggy Taper</label></strong>
 
                 </div>    <!------ FIRST-E (MAIN CONTAINER) END ---->
-
 
                 <div class="ImagePlat"> 
                       
@@ -93,7 +79,6 @@
 
                 </div>    
 
-
                 <div class="ImagePlat"> 
                       
                   <img src="assets/img/Jeans/Fit Selvedge Jeans.png" alt="Fit Selvedge Jeans" class="images" id="slot3"> 
@@ -102,7 +87,6 @@
                   <strong><label class="txtImage" id="txt3">Fit Selvedge Jeans</label></strong>
 
                 </div>    
-
 
                 <div class="ImagePlat"> 
                       
@@ -124,7 +108,6 @@
                   <strong><label class="txtImage" id="txt5">Original Jeans</label></strong>
 
                 </div>
-
 
                 <div class="ImagePlat"> 
                       
@@ -248,39 +231,27 @@
                   <br/>
                   <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Packages</label>
 
-
                 </div>    <!------ FIRST-C (MAIN CONTAINER) END ---->
-      
-
+    
           </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
 
-  
 </div>    <!------ FIRST MAIN CONTAINER END ----->
-
-
 
 <div class="SecMainCont">   <!------ SECOND MAIN CONTAINER ----->
 
-
-
-
       <div class="Packages_cont">  <!---- SECOND-A ( MAIN CONTAINER ) ---->
 
-          
             <h5 style="margin-left: 10px;">Package Choices: </h5>
             <input type="radio" name="gender" style="margin-left: 20px;" id="MALE" checked/> <label style="font-size: 14px;">MALE</label>
             <input type="radio" name="gender" style="margin-left: 10px;" id="FEMALE"/> <label style="font-size: 14px;">FEMALE</label>
             <br/>
-           
-            
-            
+
           <b><label style="font-size: 15px;margin-left: 25px;margin-top: 10px;">Male Package List</label></b>
            <br/>           
            <input type="radio" name="package_radio" style="margin-left: 25px;" id="Fit_Fashion_Rbutton"/> <label style="font-size: 15px;" id="Fit_Fashion_text">Fit Fashion Package</label>
            <br/>
            <input type="radio" name="package_radio" style="margin-left: 25px;" id="Loose_Clothing_Rbutton"/> <label style="font-size: 15px;" id="Loose_Clothing_text">Loose Clothing Package</label>
             <br/>
-
                   <u> <b><p style="font-size: 15px;margin-left: 50px;margin-top: 10px;margin-bottom: 0px;">Fit Fashion Package</p></b></u>
 
                   <input type="checkbox" name="Navy_Cotton_Cap" class="FF_package" style="margin-top: 10px;" id="Navy_Cotton_Cap_CBox"/> <label style="font-size: 14px;">Navy Cotton Cap</label>
@@ -291,8 +262,6 @@
                   <br/>
                   <input type="checkbox" name="Tanner_Sneaker" class="FF_package" id="Tanner_Sneaker_CBox"/> <label style="font-size: 14px;">Tanner Sneaker</label>
 
-                  
-                  
                   <u> <b><p style="font-size: 15px;margin-left: 50px;margin-top: 10px;margin-bottom: 0px;">Loose Clothing Package</p></b></u>
                   
                   <input type="checkbox" name="Leather_Watch" class="FF_package" style="margin-top: 10px;" id="Leather_Watch_Cbox"/> <label style="font-size: 14px;">Leather Watch</label>
@@ -304,20 +273,15 @@
                   <input type="checkbox" name="White_Sneaker" class="FF_package" id="White_Sneaker_CBox"/> <label style="font-size: 14px;">White Sneaker</label>
                   <br/>
                 
-
                   <div class="ord_img_cont">
                       
-                    
                         <input type="image" name="Original_Jeans"  src="assets/img/Jeans/Original Jeans.png" class="ord_img" />
 
                     <b><p style="font-size: 13px;margin-bottom: 0px;">Package Order Image</p></b>
                 
-                
                   </div>
 
-
       </div>    <!---- SECOND-A ( MAIN CONTAINER ) END ---->
-
 
     <div class="Ord_Cont">     <!---- SECOND-B ( MAIN CONTAINER ) ---->
 
@@ -357,7 +321,6 @@
                       <br/>
                       <textarea id="Order_summary" name="Order_summary" rows="15" cols="65" disabled></textarea>
             
-              
                 </form>   <!---- INSIDE FORM END ---->
             
 
@@ -375,16 +338,11 @@
                             <br/>
                             <button class="button Calw3 OD_button" style="background-color: rgb(53, 53, 53);">EXIT</button>
                         
-
                       </div>    <!---- ORDER DETAILS BUTTON CONTAINER END ---->
-            
 
-            
     </div>           <!---- SECOND-B ( MAIN CONTAINER ) END ---->
 
-
 </div>    <!------ SECOND MAIN CONTAINER END ----->
-
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>

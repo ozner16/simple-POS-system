@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -21,9 +20,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-
   <!-- Template Main CSS File -->
-
   <link href="assets/css/New_Emp_registration.css" rel="stylesheet">
 
 
@@ -47,17 +44,11 @@
 
 <body>
 
-
- 
-
   <div class="word_title">      <!------ NEW EMPLOYEE WORD CONT ---->
 
     <b> <p style="margin-bottom: 0px;font-size: 40px;">NEW EMPLOYEE</p></b> 
     
 </div>      <!------ NEW EMPLOYEE WORD CONT END ---->
-
-
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
       
@@ -75,9 +66,7 @@
                 <br/>
                 <br/>
                 <br/>
-                
 
-               
                 <div class="form_cont_one">   <!------ FIRST-B ( MAIN CONTAINER ) ---->
 
                  
@@ -102,9 +91,7 @@
                       <br/>
 
                       <input type="date" name="Date_of_Birth" id="Date_of_Birth" class="calcButton" style="margin-left: 100px; width: 187px;"/>
-                      
-                  
-                      
+
                         <select name="gender" id="gender" class="calcButton" style="margin-left: 10px;">
 
                           <option value="">  -- Select one --  </option>
@@ -133,12 +120,7 @@
 
                         </select>
 
-                     
-
                       <hr style="width: 730px;margin-left: 100px;" class="hr_inside"> <!------ HORIZONTAL LINE ( INSIDE ) ---->   <!------ HORIZONTAL LINE ( INSIDE ) END ---->
-
-                  
-                    
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">Department</p>
                       <p class="textmargin calctxt" style="margin-left: 278px;">Designation</p>
@@ -153,14 +135,12 @@
                           
                         <option value="">  -- Select one --  </option>
                         <option value="ME">ME</option>
-                       
 
                       </select>
 
                       <br/>
                       <br/>
                       
-
                       <p class="textmargin calctxt" style="margin-left: 100px;">Employee Status</p>
                       <p class="textmargin calctxt" style="margin-left: 115px;">Paydate</p>
                       <p class="textmargin calctxt" style="margin-left: 140px;">Employee Number</p>
@@ -171,23 +151,16 @@
                       <input type="date" name="Paydate" id="Paydate" class="calcButton" style="margin-left: 10px; width: 187px;"/>
                       <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;"/>
                    
-
-
                 </div>
 
                 <hr class="hr_outside" style="margin-top: 30px;">  <!------ HORIZONTAL LINE ( OUTSIDE ) ---->   <!------ HORIZONTAL LINE ( OUTSIDE ) END ---->
-
-
-
 
                 <div class="form_cont_two">   <!------ FIRST-C ( MAIN CONTAINER ) ---->  
 
 
                         <b> <p style="margin-left: 25px;">CONTACT INFO</p></b>
                         <br/>
-                      
-                  
-                        
+
                           <p class="textmargin calctxt" style="margin-left: 100px;">Contact No.</p>
                           <p class="textmargin calctxt" style="margin-left: 239px;">Email</p>
                         
@@ -210,23 +183,17 @@
                             <option value="Twitter">Twitter</option>     
                             <option value="Instagram">Instagram</option>  
                             
-
                           </select>
 
                           <input type="text" name="SM_account_num" id="SM_account_num" class="calcButton" style="margin-left: 10px; width: 379px;"/>                    
                           <br/>
                           <br/>
 
-
                 </div>  <!------ FIRST-C ( MAIN CONTAINER ) END ---->
-
 
                 <hr class="hr_outside" style="margin-top: 30px;">  <!------ HORIZONTAL LINE ( OUTSIDE ) ---->   <!------ HORIZONTAL LINE ( OUTSIDE ) END ---->
 
-
-
                     <div class="form_cont_three">   <!------ FIRST-D ( MAIN CONTAINER ) ---->  
-
 
                             <b> <p style="margin-left: 25px;">ADDRESS</p></b>
                             <br/>
@@ -266,17 +233,9 @@
                             <br>
                             <input type="text" name="Picture_Path" id="Picture_Path" class="calcButton" style="margin-left: 100px; width: 701px;text-align: left;"/>      
 
-                           
-                            
                     </div>    <!------ FIRST-D ( MAIN CONTAINER ) END ---->  
 
-
-
-
-
               </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
-
-
 
               <div class="save_cancel" style="margin-top: 30px;">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
 
@@ -285,16 +244,9 @@
 
               </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
 
-
           </form>
-
     </div>  <!------ MAIN BORDER END ---->
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
-
-
-
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
@@ -317,7 +269,6 @@
 </body>
 
 </html>
-
 
 <script type="application/javascript">
 $(document).ready(function(){

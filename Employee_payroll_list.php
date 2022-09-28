@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
 <style>
 
   th {background-color: #3ba9f1;}
@@ -63,19 +61,11 @@
 
       }
 
-  
 ?>
 
 </tbody>
 
 </table>
-
-
-
-
-
-
-
 
 </body>
 </html>

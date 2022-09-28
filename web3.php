@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -29,7 +28,6 @@
 <script src="JS/web3_jscript.js"></script>
 
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
@@ -121,7 +119,6 @@
 
                     </div>
 
-
                     <div class="ImagePlat"> 
                           
                       <img src="assets/img/Shirts/Oversized Safari Shirt.png" alt="Oversized Safari Shirt" class="images" id="slot7"> 
@@ -129,7 +126,6 @@
                       <strong><label class="txtImage" id="txt7">Oversized Safari Shirt</label></strong>
 
                     </div>
-
 
                     <div class="ImagePlat"> 
                           
@@ -227,10 +223,8 @@
                   <br/>
                   <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Packages</label>
 
-
                 </div>    <!------ FIRST-C (MAIN CONTAINER) END ---->
       
-
           </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
 
 </div>    <!------ FIRST MAIN CONTAINER END ----->
@@ -274,11 +268,9 @@
           <p class="textmargin calctxt">Change:</p>
           <input type="text" name="ChangeW3" id="ChangeW3" class="calcButton" style="margin-left: 140px;" disabled/>
 
-  
     </form>   <!---- INSIDE FORM END ---->
 
 </div>    <!---- CALCULATOR FORM #1 CONTAINER END ---->
-
 
    <div class="calcu_form2">     <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
  
@@ -306,9 +298,7 @@
                           <button class="button Calw3" style="width: 100px;height: 40px;background-color:rgb(90, 90, 90);">CLOSE</button>
                           <br/>
 
-                          
                           <div class="Numpad_calculator">   <!----  WHOLE CALCULATOR CONTAINER ---->
-
 
                                 <div class="calc_numpad">   <!----  CALCULATOR NUMPAD ---->
                                       <button class="button numpad">7</button>
@@ -331,7 +321,6 @@
                                       <button class="button numpad">C</button>
                                       <button class="button numpad">+</button>
                                 </div>  <!----  CALCULATOR NUMPAD END ---->
-
 
                                     <div class="enterNumpad">   <!----  CALCULATOR 'ENTER' NUMPAD CONTAINER ---->
                                           

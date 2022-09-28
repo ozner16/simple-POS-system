@@ -7,14 +7,12 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-
 <!-- Template Main CSS File -->
 <link href="assets/css/login_page.css" rel="stylesheet">
 
 
 <!-- JS file/s -->
 <script src="JS/login_page.js"></script>
-
 
 </head>
 
@@ -52,8 +50,6 @@
 		</div> <!-- /.container -->
 	</section>
 </form>	
-	
-
 	
 </div>		<!-- #1 MAIN CONTAINER END -->
 

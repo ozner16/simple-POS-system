@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -21,14 +20,10 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-
   <!-- Template Main CSS File -->
-
   <link href="assets/css/update_employee.css" rel="stylesheet">
 
-
 <!-- JS file/s -->
-
 <?php
     include("PHP_Functionality/update_employee_funct.php");
 ?>
@@ -43,7 +38,6 @@
 
 <body>
 
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
   <div class="word_title">      <!------ NEW EMPLOYEE WORD CONT ---->
@@ -52,16 +46,10 @@
     
 </div>      <!------ NEW EMPLOYEE WORD CONT END ---->
 
-      
     <div class="main_border">   <!------ MAIN BORDER ---->
       
-
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
-
-
             <form method="POST" action="PHP_Functionality/update_employee_funct.php" autocomplete="off">
-
-
                 <br/>
                 <b> <p style="margin-left: 25px;">PERSONAL INFO</p></b> 
                 <img src = "<?php echo $row2['pic_path']; ?>" id="uploaded_image"/>
@@ -69,12 +57,8 @@
                 <br/>
                 <br/>
                 <br/>
-                
 
-               
                 <div class="form_cont_one">   <!------ FIRST-B ( MAIN CONTAINER ) ---->
-
-                 
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">First Name</p>
                       <p class="textmargin calctxt" style="margin-left: 121px;">Middle Name</p>
@@ -96,8 +80,6 @@
                       <br/>
 
                       <input type="date" name="Date_of_Birth" id="Date_of_Birth" class="calcButton" style="margin-left: 100px; width: 187px;" value="<?php echo $row2['birthdate']; ?>"/>
-                      
-                  
                       
                         <select name="gender" id="gender" class="calcButton" style="margin-left: 10px;">
 
@@ -129,13 +111,7 @@
                           <option value="Widowed">Widowed</option>   
 
                         </select>
-
-                     
-
                       <hr style="width: 730px;margin-left: 100px;" class="hr_inside"> <!------ HORIZONTAL LINE ( INSIDE ) ---->   <!------ HORIZONTAL LINE ( INSIDE ) END ---->
-
-                  
-                    
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">Department</p>
                       <p class="textmargin calctxt" style="margin-left: 278px;">Designation</p>
@@ -152,13 +128,11 @@
                           <option value="">----------</option>
                         <option value="ME">ME</option>
                        
-
                       </select>
 
                       <br/>
                       <br/>
                       
-
                       <p class="textmargin calctxt" style="margin-left: 100px;">Employee Status</p>
                       <p class="textmargin calctxt" style="margin-left: 115px;">Paydate</p>
                       <p class="textmargin calctxt" style="margin-left: 140px;">Employee Number</p>
@@ -169,14 +143,9 @@
                       <input type="date" name="Paydate" id="Paydate" class="calcButton" style="margin-left: 10px; width: 187px;" value="<?php echo $row2['paydate']; ?>"/>
                       <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;" value="<?php echo $row2['emp_num']; ?>"/>
                    
-
-
                 </div>
 
                 <hr class="hr_outside" style="margin-top: 30px;">  <!------ HORIZONTAL LINE ( OUTSIDE ) ---->   <!------ HORIZONTAL LINE ( OUTSIDE ) END ---->
-
-
-
 
                 <div class="form_cont_two">   <!------ FIRST-C ( MAIN CONTAINER ) ---->  
 
@@ -184,8 +153,6 @@
                         <b> <p style="margin-left: 25px;">CONTACT INFO</p></b>
                         <br/>
                       
-                  
-                        
                           <p class="textmargin calctxt" style="margin-left: 100px;">Contact No.</p>
                           <p class="textmargin calctxt" style="margin-left: 239px;">Email</p>
                         
@@ -209,23 +176,17 @@
                             <option value="Twitter">Twitter</option>     
                             <option value="Instagram">Instagram</option>  
                             
-
                           </select>
 
                           <input type="text" name="SM_account_num" id="SM_account_num" class="calcButton" style="margin-left: 10px; width: 379px;" value="<?php echo $row2['socmedia_id']; ?>"/>                    
                           <br/>
                           <br/>
 
-
                 </div>  <!------ FIRST-C ( MAIN CONTAINER ) END ---->
-
 
                 <hr class="hr_outside" style="margin-top: 30px;">  <!------ HORIZONTAL LINE ( OUTSIDE ) ---->   <!------ HORIZONTAL LINE ( OUTSIDE ) END ---->
 
-
-
                     <div class="form_cont_three">   <!------ FIRST-D ( MAIN CONTAINER ) ---->  
-
 
                             <b> <p style="margin-left: 25px;">ADDRESS</p></b>
                             <br/>
@@ -260,28 +221,9 @@
                             <input type="text" name="Country" id="Country" class="calcButton" style="margin-left: 100px; width: 343px;" value="<?php echo $row2['country']; ?>"/>
                             <input type="text" name="Zip_Code" id="Zip_Code" class="calcButton" style="margin-left: 10px; width: 150px;" value="<?php echo $row2['zip_code']; ?>"/>      
                             <br>              
-
-                           
-                            
                     </div>    <!------ FIRST-D ( MAIN CONTAINER ) END ---->  
 
-
-                   
-
-
-
-
-
-
-
-
-
-
-
           </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
-
-
-
           <div class="save_cancel" style="margin-top: 30px;">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
 
                 <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px;" name="cancel_btn">CANCEL</button>
@@ -289,14 +231,9 @@
                 <button class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 10px; margin-right: 8px;" name="update_btn">UPDATE</button>
 
           </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
-
-
-
         </form>  
 
     </div>  <!------ MAIN BORDER END ---->
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
   <div id="preloader"></div>
@@ -320,7 +257,6 @@
 </body>
 
 </html>
-
 
 <script>
 $(document).ready(function(){

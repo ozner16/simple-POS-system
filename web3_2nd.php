@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -49,27 +48,19 @@
         </ul> -->
       </nav><!-- .nav-menu -->
 
-     
     </div>
-
   </header><!-- End Header -->
-
-
 
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
         <div class="box1">        <!------ FIRST-A (MAIN CONTAINER) ---->
-
 
             <h5>Categories</h5>
             <input type="radio" name="gender" class="genButton"/> <label>Male</label>
             <br/>
             <input type="radio" name="gender" class="genButton"/> <label>Female</label>
 
-
               <div class="ImageCont">   <!------ FIRST-D (MAIN CONTAINER) ---->
-
-
 
                     <div class="ImagePlat">   <!------ FIRST-E (MAIN CONTAINER) ---->
                           
@@ -78,8 +69,6 @@
                           <strong><label class="txtImage" id="txt1">Classic Camper</label></strong>
 
                     </div>    <!------ FIRST-E (MAIN CONTAINER) END ---->
-
-
                     <div class="ImagePlat"> 
                           
                       <img src="assets/img/Shirts/Sunset One Pocket Shirt.png" alt="Sunset One Pocket Shirt" class="images" id="slot2"> 
@@ -87,8 +76,6 @@
                       <strong><label class="txtImage" id="txt2">Sunset One Pocket Shirt</label></strong>
 
                     </div>    
-
-
                     <div class="ImagePlat"> 
                           
                       <img src="assets/img/Shirts/Rugby Polo Shirt.png" alt="Rugby Polo Shirt" class="images" id="slot3" > 
@@ -96,7 +83,6 @@
                       <strong><label class="txtImage" id="txt3">Rugby Polo Shirt</label></strong>
 
                     </div>    
-
 
                     <div class="ImagePlat"> 
                           
@@ -182,14 +168,11 @@
 
                     </div>
 
-
               </div>      <!------ FIRST-D (MAIN CONTAINER) END ---->
 
         </div>    <!------ FIRST-A (MAIN CONTAINER) END ---->
 
-
           <div class="lineCont">    <!------ FIRST-B (MAIN CONTAINER) ---->
-
 
                 <div class="catCont">   <!------ FIRST-C (MAIN CONTAINER) ---->
 
@@ -233,18 +216,12 @@
                   <br/>
                   <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Packages</label>
 
-
                 </div>    <!------ FIRST-C (MAIN CONTAINER) END ---->
       
-
           </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
 
 </div>    <!------ FIRST MAIN CONTAINER END ----->
-
-
-
 <div class="SecMainCont">   <!------ SECOND MAIN CONTAINER ----->
-
 
   <div class="calcu_form1">  <!---- CALCULATOR FORM #1 CONTAINER ---->
 
@@ -282,9 +259,7 @@
           <p class="textmargin calctxt">Change:</p>
           <input type="text" name="ChangeW3" id="ChangeW3" class="calcButton" style="margin-left: 140px;" disabled/>
 
-  
     </form>   <!---- INSIDE FORM END ---->
-
 
 </div>    <!---- CALCULATOR FORM #1 CONTAINER END ---->
 
@@ -308,9 +283,7 @@
                   <button class="button Calw3" style="width: 100px;height: 40px;background-color:rgb(90, 90, 90);" id="wew">CLOSE</button>
                   <br/>
     
-                  
                   <div class="Numpad_calculator">   <!----  WHOLE CALCULATOR CONTAINER ---->
-    
     
                         <div class="calc_numpad">   <!----  CALCULATOR NUMPAD ---->
                               <button class="button numpad">7</button>
@@ -334,7 +307,6 @@
                               <button class="button numpad">+</button>
                         </div>  <!----  CALCULATOR NUMPAD END ---->
     
-    
                             <div class="enterNumpad">   <!----  CALCULATOR 'ENTER' NUMPAD CONTAINER ---->
                                   
                                   <button class="button enterCalc">ENTER</button>
@@ -348,7 +320,6 @@
         </div>       <!---- INSIDE OF FORM #2 CONTAINER END ---->
 
           </div>                         <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
-
 </div>                         <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
 
 </div>    <!------ SECOND MAIN CONTAINER END ----->
@@ -372,5 +343,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -24,11 +23,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/web2.css" rel="stylesheet">
 
-
 <!-- JS file/s -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="JS/web2_jscript.js"></script>
-
 
 <!-- PHP functionality -->
 <?php
@@ -41,11 +38,9 @@
 
 </style>
 
-
 </head>
 
 <body>
-
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -64,15 +59,11 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-     
     </div>
 
   </header><!-- End Header -->
 
-
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
-
 
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
@@ -81,15 +72,9 @@
                 <img src = "<?php echo $row['pic_path']; ?>" id="image1"/>
                 <br/>
                 <br/>
-
-
-
                 <div class="info_basic">     <!------ FIRST-B ( MAIN CONTAINER ) ---->
 
-                  
-
                         <div class="one_left">
-
 
                               <p class="textmargin calctxt">Employee Number:</p>
                               <input type="text" name="emp_num" id="emp_num" class="calcButton" style="margin-left: 7px;" value="<?php echo $row['emp_num']; ?>" />
@@ -108,9 +93,7 @@
 
                         </div>
 
-                        
                         <div class="one_right">
-
 
                               <p class="textmargin calctxt">Civil Status:</p>
                               <input type="text" name="Civil_Status" id="Civil_Status" class="calcButton" style="margin-left: 132px;" value="<?php echo $row['civil_status']; ?>" disabled/>
@@ -128,23 +111,14 @@
                               <input type="text" name="Employee_Status" id="Employee_Status" class="calcButton" style="margin-left: 91px;"  value="<?php echo $row['emp_status']; ?>" disabled/>
 
                         </div>
-
-
                  </div>      <!------ FIRST-B ( MAIN CONTAINER ) END ---->
 
-
-
-
                  <div class="info_basic2">     <!------ FIRST-C ( MAIN CONTAINER ) ---->
-
-
-                        
 
                         <div class="two_left">
                          
                               <b><p>BASIC INCOME:</p></b> 
                               
-                             
                               <p class="textmargin calctxt margtxt">Rate / Hour:</p>
                               <input type="text" name="BI_rate" id="BI_rate" class="calcButton" style="margin-left: 79px;" onkeypress="return keypresshandler(event)"/>
                               <br/>
@@ -154,12 +128,9 @@
                               <p class="textmargin calctxt margtxt">Income / Cut Off:</p>
                               <input type="text" name="BI_Income" id="BI_Income" class="calcButton" style="margin-left: 44px;" disabled/>
                               
-
                         </div>
 
-
                         <div class="two_right">
-
 
                               <b><p>REGULAR DEDUCTIONS:</p></b> 
                                                     
@@ -181,12 +152,10 @@
 
           <div class="info_basic3">     <!------ FIRST-D ( MAIN CONTAINER ) ---->
 
-
                   <div class="three_left">
                    
                         <b><p>HONORARIUM INCOME:</p></b> 
                         
-                       
                         <p class="textmargin calctxt margtxt">Rate / Hour:</p>
                         <input type="text" name="HI_rate" id="HI_rate" class="calcButton" style="margin-left: 79px;" onkeypress="return keypresshandler(event)"/>
                         <br/>
@@ -199,13 +168,11 @@
                         <br/>
                         <br/>
                         <br/>
-                     
-
+            
                     <div class="four_left">
              
                           <b><p>OTHER INCOME:</p></b> 
-                          
-                         
+
                           <p class="textmargin calctxt margtxt">Rate / Hour:</p>
                           <input type="text" name="OI_rate" id="OI_rate" class="calcButton" style="margin-left: 79px;" onkeypress="return keypresshandler(event)"/>
                           <br/>
@@ -215,33 +182,24 @@
                           <p class="textmargin calctxt margtxt">Income / Cut Off:</p>
                           <input type="text" name="OI_Income" id="OI_Income" class="calcButton" style="margin-left: 44px;" disabled/>
                           
-        
-
                         <!--------wew  --->
 
                         <div class="five_left">
              
                               <b><p>SUMMARY INCOME:</p></b> 
-                              
-                             
+
                               <p class="textmargin calctxt margtxt">GROSS INCOME:</p>
                               <input type="text" name="GROSS_INCOME" id="GROSS_INCOME" class="calcButton" style="margin-left: 47px;" disabled/>
                               <br/>
                               <p class="textmargin calctxt margtxt">NET INCOME:</p>
                               <input type="text" name="NET_INCOME" id="NET_INCOME" class="calcButton" style="margin-left: 67px;" disabled/>
                             
-                              
-            
                         </div>
 
                     </div>
-
-
                   </div>
 
-
                   <div class="three_right">
-
 
                         <b><p>OTHER DEDUCTIONS:</p></b> 
                                               
@@ -263,25 +221,16 @@
                         <p class="textmargin calctxt margtxt">Other Loans:</p>
                         <input type="text" name="Other_Loans" id="Other_Loans" class="calcButton" style="margin-left: 84px;" onkeypress="return keypresshandler(event)"/>
 
-
-
                         <div class="five_right">
-
 
                               <b><p>DEDUCTION SUMMARY:</p></b> 
                                                     
-            
-            
-                              
                                     <br/>
                                     <p class="textmargin calctxt margtxt">Total Deductions:</p>
             
-            
                                     <input type="text" name="Total_Deductions" id="Total_Deductions" class="calcButton" style="margin-left: 7px;" disabled/>
-            
-                                    
+
                               <div class="DS_button_cont"></div>
-            
             
                                     <button class="button Calw3 DS_button" style="background-color: rgb(78, 78, 252);width: 190px;margin-left: 30px;"
                                            id="calculate_gross_income">CALCULATE GROSS INCOME</button>
@@ -296,10 +245,8 @@
                                     <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(68, 67, 67);width: 190px;width: 120px;margin-left: 25px;">CLOSE</button>
                                     <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(236, 75, 75);width: 190px;width: 120px; margin-left: 20px;" id="haha">CANCEL</button>
                                     <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(0, 192, 58);width: 190px;width: 120px; margin-left: 20px;" id="new_button">NEW</button>
-                                    
-                        
+
                               </div>
-            
                         </div>
                    
                   </div>
@@ -310,57 +257,9 @@
 
     </div>                         <!------ FIRST-E ( MAIN CONTAINER ) END ---->
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
 
-
-
-     
-          
-      
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
@@ -383,8 +282,6 @@
 </body>
 
 </html>
-
-
 <script>
 $(document).ready(function(){
     $(document).on('change', '#file', function(){

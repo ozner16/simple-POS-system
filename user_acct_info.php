@@ -9,7 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -21,11 +20,8 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-
   <!-- Template Main CSS File -->
-
   <link href="assets/css/user_acct_info.css" rel="stylesheet">
-
 
 <!-- JS file/s -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -37,7 +33,6 @@
     include("PHP_Functionality/user_acct_info_func.php");
 ?>
 
-
 <style type="text/css">
 
     img{height: 228px;width: 227px;}
@@ -48,34 +43,23 @@
 
 <body>
 
-
- 
-
   <div class="word_title">      <!------ NEW EMPLOYEE WORD CONT ---->
 
     <b> <p style="margin-bottom: 0px;font-size: 30px;">USER ACCOUNT INFORMATION</p></b> 
     
 </div>      <!------ NEW EMPLOYEE WORD CONT END ---->
 
-
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
-
-      
     <div class="main_border">   <!------ MAIN BORDER ---->
       
-
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
           <form method="POST" action="PHP_Functionality/user_acct_info_func.php" autocomplete="off">
-
-               
 
                 <img src = "<?php echo $row2['pic_path']; ?>" id="image1"/>
 
               <div class="textboxes_cont">
                 
-
                   <p class="calctxt" style="margin-left: 30px;">First Name</p>
                   <p class="calctxt" style="margin-left: 106px;">Middle Name</p>
                   <p class="calctxt" style="margin-left: 93px;">Last Name</p>
@@ -113,16 +97,12 @@
                   <input type="text" name="user_status" id="user_status" class="textboxes2" value="<?php echo $row3['user_status']; ?>"/>
                   <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $row2['emp_num']; ?>" />
                   
-
-
               </div>
               
                 <br/>
                 <br/>
                 <br/>
                 <br/>
-
-                
 
               <div class="buttons">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
 
@@ -132,14 +112,10 @@
 
               </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
 
-
           </form>
 
     </div>  <!------ MAIN BORDER END ---->
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
-
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
