@@ -1475,7 +1475,7 @@ input[type='date'] {outline: none;font-size: 16px;padding: 2px;}
 
 
 
-.word_title{height: 70px;width: 400px;margin-top: 50px;margin-bottom: 0;text-align: center;margin-left: 512px;}
+.word_title{height: 70px;width: 100%;margin-top: 50px;margin-bottom: 0;text-align: center;}
 
 p {margin-bottom: 0px;}
 
