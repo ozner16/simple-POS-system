@@ -28,9 +28,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="JS/web3_2nd_jscript.js"></script>
 
-
-
-
 </head>
 
 <body>
@@ -184,25 +181,9 @@
                       <strong><label class="txtImage" id="txt12">Pieced Pacific Shirt</label></strong>
 
                     </div>
-                 
-                    
-
-
-
-
-
-
-
-
-
 
 
               </div>      <!------ FIRST-D (MAIN CONTAINER) END ---->
-
-              
-
-          
-
 
         </div>    <!------ FIRST-A (MAIN CONTAINER) END ---->
 
@@ -258,11 +239,6 @@
 
           </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
 
-         
-
-
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
 
@@ -312,18 +288,9 @@
 
 </div>    <!---- CALCULATOR FORM #1 CONTAINER END ---->
 
-
-
-
-
    <div class="calcu_form2">     <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
             
-                
-            
               <h5 style="margin-left: 10px;">Order Discount Options:</h5>
-
-                
-              
               
               <div class="calcu_form2_inside">    <!---- INSIDE OF FORM #2 CONTAINER ---->
 
@@ -374,71 +341,17 @@
     
                             </div>  <!----  CALCULATOR 'ENTER' NUMPAD CONTAINER END ---->
     
-    
-    
-    
                   </div>  <!----  WHOLE CALCULATOR CONTAINER END---->
-    
-    
-                    
+
                 </div>     <!---- MAIN CALCULATOR END ---->
-    
-    
-    
+
         </div>       <!---- INSIDE OF FORM #2 CONTAINER END ---->
 
-
-
-
-
-
-
-                    
           </div>                         <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
 
-
-
-
-
-
-
-        
 </div>                         <!--------------- CALCULATOR FORM #2 CONTAINER --------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>    <!------ SECOND MAIN CONTAINER END ----->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>

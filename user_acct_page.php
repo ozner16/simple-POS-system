@@ -65,20 +65,12 @@ tr{cursor: pointer;}
  
       }
 
-      
 
-  
 ?>
 
 </tbody>
 
 </table>
-
-
-
-
-
-
 
 
 </body>

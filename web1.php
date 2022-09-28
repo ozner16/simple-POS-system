@@ -28,9 +28,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="JS/web1_jscript.js"></script>
   
-  
 
-  
 </head>
 
 <body>
@@ -200,23 +198,7 @@
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
                 </div>      <!------ FIRST-D (MAIN CONTAINER) END ---->
-
-              
-
-          
-
 
         </div>    <!------ FIRST-A (MAIN CONTAINER) END ---->
 
@@ -272,11 +254,7 @@
 
           </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
 
-         
-
-
-
-
+  
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
 
@@ -339,12 +317,6 @@
 
 
       </div>    <!---- SECOND-A ( MAIN CONTAINER ) END ---->
-
-
-
-
-
-
 
 
     <div class="Ord_Cont">     <!---- SECOND-B ( MAIN CONTAINER ) ---->
@@ -411,39 +383,8 @@
     </div>           <!---- SECOND-B ( MAIN CONTAINER ) END ---->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>    <!------ SECOND MAIN CONTAINER END ----->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>

@@ -138,30 +138,8 @@
     </div>  <!------ MAIN BORDER END ---->
 
 
-         
-
-
-     
-          
-      
-
-
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>

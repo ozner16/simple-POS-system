@@ -177,24 +177,10 @@
                          
                         </div>
 
-
-
-
-
-
-
-
-
-
                 </div>                         <!------ FIRST-C ( MAIN CONTAINER ) END ---->
-
-
-
 
           <div class="info_basic3">     <!------ FIRST-D ( MAIN CONTAINER ) ---->
 
-
-                        
 
                   <div class="three_left">
                    
@@ -248,21 +234,7 @@
             
                         </div>
 
-
-
-
-
-
-
-
-
                     </div>
-
-
-
-
-
-
 
 
                   </div>
@@ -325,43 +297,16 @@
                                     <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(236, 75, 75);width: 190px;width: 120px; margin-left: 20px;" id="haha">CANCEL</button>
                                     <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(0, 192, 58);width: 190px;width: 120px; margin-left: 20px;" id="new_button">NEW</button>
                                     
-                                    
-            
                         
                               </div>
             
-            
-            
-            
                         </div>
-            
-                        
-                        
                    
                   </div>
 
-
-
-
-
           </div>                         <!------ FIRST-D ( MAIN CONTAINER ) END ---->
 
-
-
-
     <div class="info_basic5">     <!------ FIRST-E ( MAIN CONTAINER ) ---->
-
-
-                        
-
-            
-
-
-
-
-
-
-
 
     </div>                         <!------ FIRST-E ( MAIN CONTAINER ) END ---->
 

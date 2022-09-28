@@ -103,16 +103,6 @@ $(document).ready(function(){
 		document.getElementById('frame').src = "./user_acct_page.php";
 	});
 
- 
-
-
-
-
-
-
-
-
-
 
 //end of $(document).ready(function(){ ---
 });
