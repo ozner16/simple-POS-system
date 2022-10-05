@@ -43,13 +43,10 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <!-- <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
       <h1 class="logo"><a href="./index.html">R&Z CLOTHING STORE</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="./index.html">Home</a></li>
@@ -57,11 +54,13 @@
         
           <li><a href="./contact.html">Contacts</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
     </div>
 
-  </header><!-- End Header -->
+  </header>  -->
+  
+  <!-- End Header -->
 
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
