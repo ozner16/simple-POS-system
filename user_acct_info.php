@@ -87,7 +87,7 @@
                   <br>
 
                   <!-- <p class="calctxt" style="margin-left: 30px;">Confirm Password</p> -->
-                  <p class="calctxt" style="margin-left: 104px;">User Type</p>
+                  <p class="calctxt" style="margin-left: 12px;">User Type</p>
                   <p class="calctxt" style="margin-left: 158px;">User Status</p>
                   <p class="calctxt" style="margin-left: 147px;">Employee Number</p>
                   <br>
