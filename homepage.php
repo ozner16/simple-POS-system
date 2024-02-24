@@ -40,7 +40,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="./index.html">R&Z CLOTHING STORE</a></h1>
+      <h1 class="logo"><a href="homepage.php">R&Z CLOTHING STORE</a></h1>
 
 
       <nav class="nav-menu d-none d-lg-block">
