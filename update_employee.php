@@ -261,7 +261,7 @@
 
 </html>
 
-<script>
+<!-- <script>
 $(document).ready(function(){
     $(document).on('change', '#file', function(){
           var name = document.getElementById("file").files[0].name;
@@ -300,5 +300,5 @@ $(document).ready(function(){
           }
         });
 });
-</script>
+</script> -->
 

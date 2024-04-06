@@ -26,7 +26,7 @@
 
     <h2 style="margin-left: 10px;">Employees List</h2>
     <button class="button Calw3 OD_button" style="background-color:rgb(92, 92, 255); float:right;font-size:15px" name='new_emp_btn' id='new_emp_btn'>New Employee</button>
-    <table class="table table-bordered table-hover" id="tbl">
+    <table class="table table-bordered table-hover">
     <thead>
         <tr>
           <th>Employee Number</th>
@@ -40,8 +40,8 @@
           <th>Employee Status</th>
         </tr>
       </thead>
-      <tbody>
-        
+      <tbody id="tbl-data">
+      
       <?php
         //connection
         include("PHP_Functionality/connection.php");
@@ -79,7 +79,7 @@
 </html>
 <script>
 
-       let table =  document.getElementById('tbl');
+       let table =  document.getElementById('tbl-data');
 
        table.addEventListener("click", function(e){
             let id = e.target.parentElement.children[0].innerText;
