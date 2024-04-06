@@ -10,8 +10,12 @@
       {
          die("Connection Failed!" . mysqli_connect_error()); 
       }
+
+      // Retrieve the id from the URL parameters
+      $receivedText = urldecode($_GET['id']);
+
       //mysql query select from emp_basic_info
-      $query_select2 = "SELECT * from emp_basic_info where emp_num = '1';";
+      $query_select2 = "SELECT * from emp_basic_info where emp_num = '$receivedText';";
       $query_database2 = mysqli_query($conn,$query_select2);
       $row2 = mysqli_fetch_array($query_database2);
       //mysql query      
