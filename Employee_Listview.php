@@ -91,19 +91,9 @@
 
        });
 
-       
-
-       
+       $("#new_emp_btn").click(function() {
+           window.location.href = "./New_Emp_registration.php";
+       });
+    
 </script>
 
-
-
-<script>
-  $(document).ready(function(){
-
-      $("#new_emp_btn").click(function() {
-          window.location.href = "./New_Emp_registration.php";
-      });
-
-  });
-</script>
