@@ -88,7 +88,7 @@
             let encodedText = encodeURI(id);
             // Navigate to the other page with the text as a parameter
             window.location.href = "./update_employee.php?id=" + encodedText;
-            
+
        });
 
        
@@ -98,18 +98,12 @@
 
 
 
-<!-- <script>
+<script>
   $(document).ready(function(){
 
-      $('table tr').on('click', 'td', function () {
-         window.location.href = "./update_employee.php";
-  })
-
-
-    $("#new_emp_btn").click(function() {
-         window.location.href = "./New_Emp_registration.php";
-    });
-
+      $("#new_emp_btn").click(function() {
+          window.location.href = "./New_Emp_registration.php";
+      });
 
   });
-</script> -->
+</script>
