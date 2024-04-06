@@ -144,7 +144,7 @@
 
                       <input type="text" name="Employee_Status" id="Employee_Status" class="calcButton" style="margin-left: 100px;width: 220px;" value="<?php echo $row2['emp_status']; ?>"/>
                       <input type="date" name="Paydate" id="Paydate" class="calcButton" style="margin-left: 10px; width: 187px;" value="<?php echo $row2['paydate']; ?>"/>
-                      <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;" value="<?php echo $row2['emp_num']; ?>"/>
+                      <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;" value="<?php echo $row2['emp_num']; ?>" disabled/>
                    
                 </div>
 
