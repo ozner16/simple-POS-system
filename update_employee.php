@@ -27,6 +27,16 @@
 <!-- JS file/s -->
 <?php
     include("PHP_Functionality/update_employee_funct.php");
+
+    if(!empty($row2["photo"])){
+      
+        $mimetype = $row2["mimetype"];
+        $photo = $row2["photo"];
+
+        // Construct the data URI
+        $dataURI = 'data:' . $mimetype . ';base64,' . base64_encode($photo);
+    }
+   
 ?>
 
 <style type="text/css">
@@ -52,10 +62,10 @@
       
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
-            <form method="POST" action="PHP_Functionality/update_employee_funct.php" autocomplete="off">
+            <form method="POST" action="<?php echo `'./update_employee.php?id=' + $receivedText`?>" autocomplete="off" enctype="multipart/form-data">
                 <br/>
                 <b> <p style="margin-left: 25px;">PERSONAL INFO</p></b> 
-                <img src = "<?php echo $row2['pic_path']; ?>" id="uploaded_image"/>
+                <img src = "<?php echo $dataURI; ?>" id="uploaded_image"/>
                 <input type="file" name="file" id="file" style="margin-left: 375px;font-size:13px;margin-top:1px;"/>
                 <br/>
                 <br/>
@@ -229,13 +239,16 @@
           </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
           <div class="save_cancel" style="margin-top: 30px;">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
 
-                <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px;" name="cancel_btn">CANCEL</button>
+                
                 <button class="button Calw3 DS_button" style="background-color:rgb(94, 94, 94);width: 120px; margin-left: 10px;" name="delete_btn">DELETE</button>
                 <button class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 10px; margin-right: 8px;" name="update_btn">UPDATE</button>
 
           </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
         </form>  
 
+        
+        <button class="button Calw3 DS_button" style="background-color:rgb(158, 158, 158);width: 120px; margin-top: 30px; float: right; margin-right: 7px;" name="back_btn" id="back_btn">BACK</button>
+      
     </div>  <!------ MAIN BORDER END ---->
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
@@ -260,45 +273,39 @@
 </body>
 
 </html>
+<script>
 
-<!-- <script>
-$(document).ready(function(){
-    $(document).on('change', '#file', function(){
-          var name = document.getElementById("file").files[0].name;
-          var form_data = new FormData();
-          var ext = name.split('.').pop().toLowerCase();
-          if(jQuery.inArray(ext, ['gif','png','jpg','jpeg']) == -1) 
-          {
-          alert("Invalid Image File");
-          }
-          var oFReader = new FileReader();
-          oFReader.readAsDataURL(document.getElementById("file").files[0]);
-          var f = document.getElementById("file").files[0];
-          var fsize = f.size||f.fileSize;
-          if(fsize > 2000000)
-          {
-          alert("Image File Size is very big");
-          }
-          else
-          {
-          form_data.append("file", document.getElementById('file').files[0]);
-          $.ajax({
-            url:"upload.php",
-            method:"POST",
-            data: form_data,
-            contentType: false,
-            cache: false,
-            processData: false,
-            beforeSend:function(){
-            $('#uploaded_image').html("<label class='text-success'>Image Uploading...</label>");
-            },   
-            success:function(data)
-            {
-            $('#uploaded_image').html(data);
-            }
-          });
-          }
-        });
-});
-</script> -->
+    //SHOW PICTURE TO THE IMG ELEMENT
+    // Get the file input element and the preview image element
+    let fileInput = document.getElementById('file');
+    let previewImage = document.getElementById('uploaded_image');
+
+    // Add an event listener to the file input element
+    fileInput.addEventListener('change', function(event) {
+        // Get the selected file
+        var selectedFile = event.target.files[0];
+
+        // Check if a file was selected
+        if (selectedFile) {
+            // Create a new FileReader object
+            var reader = new FileReader();
+
+            // Set a callback function to handle the file reading process
+            reader.onload = function(event) {
+                // Set the source of the preview image to the data URL of the selected file
+                previewImage.src = event.target.result;
+                // Show the preview image
+                previewImage.style.display = 'block';
+            };
+
+            // Read the selected file as a data URL
+            reader.readAsDataURL(selectedFile);
+        }
+    });
+
+
+    document.getElementById("back_btn").onclick = function(){
+        window.location.href = './Employee_Listview.php';
+    }
+</script>
 

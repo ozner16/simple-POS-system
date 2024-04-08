@@ -57,12 +57,14 @@
 
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
-          <form method="POST" action="PHP_Functionality/New_Emp_registration_PHP_funct.php" autocomplete="off" enctype="multipart/form-data">
+          <form method="POST" action="./New_Emp_registration.php" autocomplete="off" enctype="multipart/form-data">
 
                 <br/>
                 <b> <p style="margin-left: 25px;">PERSONAL INFO</p></b> 
+
                 <div id="img_div" class="img-responsive"></div>
                 <input type="file" name="img" id="img" style="margin-left: 375px;font-size:13px;margin-top:1px;"/>
+                
                 <br/>
                 <br/>
                 <br/>
@@ -72,22 +74,22 @@
                  
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">First Name</p>
-                      <p class="textmargin calctxt" style="margin-left: 121px;">Middle Name</p>
-                      <p class="textmargin calctxt" style="margin-left: 102px;">Last Name</p>
-                      <p class="textmargin calctxt" style="margin-left: 122px;">Suffix</p>
+                      <p class="textmargin calctxt" style="margin-left: 140px;">Middle Name</p>
+                      <p class="textmargin calctxt" style="margin-left: 121px;">Last Name</p>
+                      <p class="textmargin calctxt" style="margin-left: 138px;">Suffix</p>
                       <br/>
 
-                      <input type="text" name="First_Name" id="First_Name" class="calcButton" style="margin-left: 100px;"/>
-                      <input type="text" name="Middle_Name" id="Middle_Name" class="calcButton" style="margin-left: 10px;"/>
-                      <input type="text" name="Last_Name" id="Last_Name" class="calcButton" style="margin-left: 10px;"/>
+                      <input type="text" name="First_Name" id="First_Name" class="calcButton" style="margin-left: 100px;" />
+                      <input type="text" name="Middle_Name" id="Middle_Name" class="calcButton" style="margin-left: 10px;" />
+                      <input type="text" name="Last_Name" id="Last_Name" class="calcButton" style="margin-left: 10px;" />
                       <input type="text" name="Suffix" id="Suffix" class="calcButton" style="margin-left: 10px; width: 100px;"/>
                       <br/>
                       <br/>
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">Date of Birth</p>
-                      <p class="textmargin calctxt" style="margin-left: 109px;">Gender</p>
-                      <p class="textmargin calctxt" style="margin-left: 114px;">Nationality</p>
-                      <p class="textmargin calctxt" style="margin-left: 92px;">Civil Status</p>
+                      <p class="textmargin calctxt" style="margin-left: 112px;">Gender</p>
+                      <p class="textmargin calctxt" style="margin-left: 120px;">Nationality</p>
+                      <p class="textmargin calctxt" style="margin-left: 96px;">Civil Status</p>
                       <br/>
 
                       <input type="date" name="Date_of_Birth" id="Date_of_Birth" class="calcButton" style="margin-left: 100px; width: 187px;"/>
@@ -123,7 +125,7 @@
                       <hr style="width: 730px;margin-left: 100px;" class="hr_inside"> <!------ HORIZONTAL LINE ( INSIDE ) ---->   <!------ HORIZONTAL LINE ( INSIDE ) END ---->
 
                       <p class="textmargin calctxt" style="margin-left: 100px;">Department</p>
-                      <p class="textmargin calctxt" style="margin-left: 278px;">Designation</p>
+                      <p class="textmargin calctxt" style="margin-left: 286px;">Designation</p>
                       <p class="textmargin calctxt" style="margin-left: 87px;">Qualified Dep. Status</p>
                      
                       <br/>
@@ -143,13 +145,13 @@
                       
                       <p class="textmargin calctxt" style="margin-left: 100px;">Employee Status</p>
                       <p class="textmargin calctxt" style="margin-left: 115px;">Paydate</p>
-                      <p class="textmargin calctxt" style="margin-left: 140px;">Employee Number</p>
+                      <!-- <p class="textmargin calctxt" style="margin-left: 140px;">Employee Number</p> -->
                    
                       <br/>
 
                       <input type="text" name="Employee_Status" id="Employee_Status" class="calcButton" style="margin-left: 100px;width: 220px;"/>
                       <input type="date" name="Paydate" id="Paydate" class="calcButton" style="margin-left: 10px; width: 187px;"/>
-                      <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;" required/>
+                      <!-- <input type="text" name="Employee_Number" id="Employee_Number" class="calcButton" style="margin-left: 10px;width: 266px;" required/> -->
                    
                 </div>
 
@@ -229,22 +231,22 @@
                             <input type="text" name="Zip_Code" id="Zip_Code" class="calcButton" style="margin-left: 10px; width: 150px;" />      
                             <br>  
                             <br>
-                            <p class="textmargin calctxt" style="margin-left: 100px;">Picture Path</p>
-                            <br>
-                            <input type="text" name="Picture_Path" id="Picture_Path" class="calcButton" style="margin-left: 100px; width: 701px;text-align: left;"/>      
+                              
 
                     </div>    <!------ FIRST-D ( MAIN CONTAINER ) END ---->  
 
               </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
 
               <div class="save_cancel" style="margin-top: 30px;">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
-
-                    <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px;" name="cancel_btn" id="cancel_btn">CANCEL</button>
-                    <input type="submit" name="save_btn" class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 10px; margin-right: 8px;" value="SAVE" />
+                   
+                    <input type="submit" name="save_btn" value="SAVE" class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 10px; margin-right: 8px;" />
 
               </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
 
         </form>
+        <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px; margin-top: 30px; float: right; margin-right: 5px;" name="cancel_btn" id="cancel_btn" >CLEAR</button>
+        <button class="button Calw3 DS_button" style="background-color:rgb(158, 158, 158);width: 120px; margin-top: 30px; float: right; margin-right: 15px;" name="back_btn" id="back_btn">BACK</button>
+        
     </div>  <!------ MAIN BORDER END ---->
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
@@ -273,8 +275,8 @@
 <script type="application/javascript">
 $(document).ready(function(){
 
+    //adding picture to the pic div after click
     var _URL = window.URL || window.webkitURL;
-
     $('#img').on('change', function(){
         var file = this.files[0];
         var img = new Image();
@@ -292,6 +294,26 @@ $(document).ready(function(){
          
     });
 
-//end of $(document).ready(function(){
+
+document.getElementById("cancel_btn").onclick = function(){
+      
+      // Select all input elements using querySelectorAll
+      let inputs = document.querySelectorAll('input[type="text"]');
+      let img = document.querySelector("#img_div img");
+      
+      // Loop through each input element and clear its value
+      inputs.forEach(function(input) {
+          input.value = ""; // Set the value to an empty string
+      });
+      
+      img.remove();
+     
+
+  }
+  document.getElementById("back_btn").onclick = function(){
+      window.location.href = './Employee_Listview.php';
+  }
+
 });
 </script>
+

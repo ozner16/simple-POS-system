@@ -34,7 +34,7 @@
   
 </head>
 
-<body style="background-image: url('uploads/fashion1.jpg');">
+<body style="background-image: url('./assets/img/homepage/fashion1.jpg');">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">

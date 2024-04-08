@@ -9,13 +9,15 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
    <style>
+
       th {background-color: #3ba9f1;}
       tr{cursor: pointer;}
 
       body{
-          overflow: hidden;
+          overflow: auto;
           padding: 20px;
       }
+
     </style>
 
         <!-- Template Main CSS File -->
@@ -26,7 +28,7 @@
 
     <h2 style="margin-left: 10px;">Employees List</h2>
     <button class="button Calw3 OD_button" style="background-color:rgb(92, 92, 255); float:right;font-size:15px" name='new_emp_btn' id='new_emp_btn'>New Employee</button>
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" id="tbl">
     <thead>
         <tr>
           <th>Employee Number</th>
@@ -62,11 +64,11 @@
 
           }
 
-          else
-          {
-            echo "0 results";
+          // else
+          // {
+          //   echo "0 results";
 
-          }
+          // }
 
       
     ?>
