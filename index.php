@@ -43,7 +43,7 @@
 						</div>
 						<input type="submit" id="btn-login" name="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
 					</form>
-					<a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+					<!-- <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a> -->
 					<hr/>            	   
 				</div> <!-- /.col-xs-12 -->
 			</div> <!-- /.row -->

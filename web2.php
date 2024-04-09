@@ -25,11 +25,21 @@
 
 <!-- JS file/s -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="JS/web2_jscript.js"></script>
+<script src="./JS/web2_jscript.js"></script>
 
 <!-- PHP functionality -->
 <?php
     include("PHP_Functionality/web2_PHP_funct.php");
+
+    // fetch image data
+    if(!empty($row["photo"])){
+      
+      $mimetype = $row["mimetype"];
+      $photo = $row["photo"];
+
+      // Construct the data URI
+      $dataURI = 'data:' . $mimetype . ';base64,' . base64_encode($photo);
+  }
 ?>
 
 <style type="text/css">
@@ -42,33 +52,14 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <!-- <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-
-      <h1 class="logo"><a href="./index.html">R&Z CLOTHING STORE</a></h1>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-        
-          <li><a href="./contact.html">Contacts</a></li>
-        </ul>
-      </nav>
-
-    </div>
-
-  </header>  -->
-  
-  <!-- End Header -->
-
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
+        
                   <br/>
                 <b> <p style="margin-left: 25px;">EMPLOYEE BASIC INFO:</p></b> 
-                <img src = "<?php echo $row['pic_path']; ?>" id="image1"/>
+                <img src = "<?php echo $dataURI; ?>" id="image1"/>
                 <br/>
                 <br/>
                 <div class="info_basic">     <!------ FIRST-B ( MAIN CONTAINER ) ---->
@@ -76,7 +67,7 @@
                         <div class="one_left">
 
                               <p class="textmargin calctxt">Employee Number:</p>
-                              <input type="text" name="emp_num" id="emp_num" class="calcButton" style="margin-left: 7px;" value="<?php echo $row['emp_num']; ?>" />
+                              <input type="text" name="emp_num" id="emp_num" class="calcButton" style="margin-left: 7px;" value="<?php echo $row['emp_num']; ?>" disabled/>
                               <br/>
                               <p class="textmargin calctxt">Department:</p>
                               <input type="text" name="Department" id="Department" class="calcButton" style="margin-left: 52px;"value="<?php echo $row['dept']; ?>" disabled/>
@@ -101,7 +92,7 @@
                               <input type="text" name="Designation" id="Designation" class="calcButton" style="margin-left: 124px;" value="<?php echo $row['designation']; ?>" disabled/>
                               <br/>
                               <p class="textmargin calctxt">Qualified Dependents Status:</p>
-                              <input type="text" name="QD_Status" id="QD_Status" class="calcButton" style="margin-left: 7px;" value="<?php echo $row['Q_D_status']; ?>" />
+                              <input type="text" name="QD_Status" id="QD_Status" class="calcButton" style="margin-left: 7px;" value="<?php echo $row['Q_D_status']; ?>" disabled/>
                               <br/>
                               <p class="textmargin calctxt">Paydate:</p>
                               <input type="text" name="Paydate" id="Paydate" class="calcButton" style="margin-left: 151px;"  value="<?php echo $row['paydate']; ?>" disabled/>
@@ -220,30 +211,32 @@
                         <p class="textmargin calctxt margtxt">Other Loans:</p>
                         <input type="text" name="Other_Loans" id="Other_Loans" class="calcButton" style="margin-left: 84px;" onkeypress="return keypresshandler(event)"/>
 
-                        <div class="five_right">
+                              <div class="five_right">
 
-                              <b><p>DEDUCTION SUMMARY:</p></b> 
+                                    <b><p>DEDUCTION SUMMARY:</p></b> 
                                                     
                                     <br/>
                                     <p class="textmargin calctxt margtxt">Total Deductions:</p>
             
                                     <input type="text" name="Total_Deductions" id="Total_Deductions" class="calcButton" style="margin-left: 7px;" disabled/>
 
-                              <div class="DS_button_cont"></div>
-            
-                                    <button class="button Calw3 DS_button" style="background-color: rgb(78, 78, 252);width: 190px;margin-left: 30px;"
-                                           id="calculate_gross_income">CALCULATE GROSS INCOME</button>
+                                          <br>
+                                          <br>
+                                          <br>
+                                          <button class="button Calw3 DS_button" style="background-color: rgb(78, 78, 252);width: 190px;margin-left: 30px;"
+                                                id="calculate_gross_income">CALCULATE GROSS INCOME</button>
 
-                                    <button class="button Calw3 DS_button" style="background-color: rgb(78, 78, 252);width: 190px;margin-left: 10px;" id="calculate_net_income">CALCULATE NET INCOME</button>
-                                    <br/>
-            
-                                    <button class="button Calw3 DS_button DS_marg_top" style="background-color: rgb(110, 137, 255);width: 160px;margin-left: 45px;">PRINT PREVIEW PAYSLIP</button>
-                                    <button class="button Calw3 DS_button DS_marg_top" style="background-color: rgb(110, 137, 255);width: 160px;margin-left: 40px;">PRINT PAYSLIP</button>
-                                    <br/>
-            
-                                    <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(68, 67, 67);width: 190px;width: 120px;margin-left: 25px;">CLOSE</button>
-                                    <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(236, 75, 75);width: 190px;width: 120px; margin-left: 20px;" id="haha">CANCEL</button>
-                                    <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(0, 192, 58);width: 190px;width: 120px; margin-left: 20px;" id="new_button">NEW</button>
+                                          <button class="button Calw3 DS_button" style="background-color: rgb(78, 78, 252);width: 190px;margin-left: 10px;" id="calculate_net_income">CALCULATE NET INCOME</button>
+                                          <br/>
+                  
+                                          <!-- <button class="button Calw3 DS_button DS_marg_top" style="background-color: rgb(110, 137, 255);width: 160px;margin-left: 45px;">PRINT PREVIEW PAYSLIP</button>
+                                          <button class="button Calw3 DS_button DS_marg_top" style="background-color: rgb(110, 137, 255);width: 160px;margin-left: 40px;">PRINT PAYSLIP</button>
+                                          <br/> -->
+                  
+                                          <!-- <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(68, 67, 67);width: 190px;width: 120px;margin-left: 25px;">CLOSE</button> -->
+                                          <br>
+                                          <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(161, 161, 157);width: 190px;width: 120px; margin-left: 85px;" id="clear_btn">CLEAR</button>
+                                          <button class="button Calw3 DS_button DS_marg_top1" style="background-color: rgb(0, 192, 58);width: 190px;width: 120px; margin-left: 40px;" id="new_button">NEW +</button>
 
                               </div>
                         </div>
@@ -256,7 +249,8 @@
 
     </div>                         <!------ FIRST-E ( MAIN CONTAINER ) END ---->
 
-          </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
+      
+      </div>        <!------ FIRST-A ( MAIN CONTAINER ) END ---->
 
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 
@@ -281,43 +275,3 @@
 </body>
 
 </html>
-<script>
-$(document).ready(function(){
-    $(document).on('change', '#file', function(){
-          var name = document.getElementById("file").files[0].name;
-          var form_data = new FormData();
-          var ext = name.split('.').pop().toLowerCase();
-          if(jQuery.inArray(ext, ['gif','png','jpg','jpeg']) == -1) 
-          {
-          alert("Invalid Image File");
-          }
-          var oFReader = new FileReader();
-          oFReader.readAsDataURL(document.getElementById("file").files[0]);
-          var f = document.getElementById("file").files[0];
-          var fsize = f.size||f.fileSize;
-          if(fsize > 2000000)
-          {
-          alert("Image File Size is very big");
-          }
-          else
-          {
-          form_data.append("file", document.getElementById('file').files[0]);
-          $.ajax({
-            url:"upload.php",
-            method:"POST",
-            data: form_data,
-            contentType: false,
-            cache: false,
-            processData: false,
-            beforeSend:function(){
-            $('#uploaded_image').html("<label class='text-success'>Image Uploading...</label>");
-            },   
-            success:function(data)
-            {
-            $('#uploaded_image').html(data);
-            }
-          });
-          }
-        });
-});
-</script>

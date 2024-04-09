@@ -24,7 +24,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/update_employee.css" rel="stylesheet">
 
-<!-- JS file/s -->
+
 <?php
     include("PHP_Functionality/update_employee_funct.php");
 

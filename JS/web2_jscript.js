@@ -1300,20 +1300,20 @@ $(document).ready(function(){
 
 
     //NEW BUTTON
-    $("#new_button").click(function(){
+    $(".five_right button#clear_btn").click(function(){
 
        
             //employee basic info
-            document.getElementById("emp_num").value = "";
-            document.getElementById("Department").value = "";
-            document.getElementById("First Name").value = "";
-            document.getElementById("Middle_Name").value = "";
-            document.getElementById("Surname").value = "";
-            document.getElementById("Civil_Status").value = "";
-            document.getElementById("Designation").value = "";
-            document.getElementById("QD_Status").value = "";
-            document.getElementById("Paydate").value = "";
-            document.getElementById("Employee_Status").value = "";
+            // document.getElementById("emp_num").value = "";
+            // document.getElementById("Department").value = "";
+            // document.getElementById("First Name").value = "";
+            // document.getElementById("Middle_Name").value = "";
+            // document.getElementById("Surname").value = "";
+            // document.getElementById("Civil_Status").value = "";
+            // document.getElementById("Designation").value = "";
+            // document.getElementById("QD_Status").value = "";
+            // document.getElementById("Paydate").value = "";
+            // document.getElementById("Employee_Status").value = "";
 
             //basic income
             document.getElementById("BI_rate").value = "";
@@ -1353,9 +1353,11 @@ $(document).ready(function(){
 
     }); 
     
-    
 
+    $(".five_right button#new_button").click(function(){
+        window.location.href = './Employee_payroll_list.php';
+    });
 
+   
 
-// END OF $(document).ready(function() ---
   });

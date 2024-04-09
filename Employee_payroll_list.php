@@ -38,7 +38,7 @@
       <th>Qualified Dependent Status</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="tbl-data">
     
   <?php
     //connection
@@ -78,10 +78,24 @@
 <script>
 $(document).ready(function(){
 
-  $('table tr').on('click', 'td', function () {
-   window.location.href = "./web2.php";
-})
+//   $('table tr').on('click', 'td', function () {
+//    window.location.href = "./web2.php";
+// })
 
-//end of $(document).ready(function(){ ---
+let table =  document.getElementById('tbl-data');
+
+table.addEventListener("click", function(e){
+     let id = e.target.parentElement.children[0].innerText;
+    
+     // Encode the text to make it URL-safe
+     let encodedText = encodeURI(id);
+     // Navigate to the other page with the text as a parameter
+     window.location.href = "./web2.php?id=" + encodedText;
+
+});
+
+
+
+
 });
 </script>
