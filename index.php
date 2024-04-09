@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
+	<title>Login</title>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<!-- Template Main CSS File -->
-<link href="assets/css/login_page.css" rel="stylesheet">
-
-
-<!-- JS file/s -->
-<script src="JS/login_page.js"></script>
-
+	<!-- Template Main CSS File -->
+	<link href="assets/css/login_page.css" rel="stylesheet">
+	<!-- JS file/s -->
+	<script src="JS/login_page.js"></script>
 </head>
+<?php 
+
+	include "./PHP_Functionality/login_page_funct.php";
+
+?>
 
 <body>
 
@@ -22,7 +24,7 @@
 
 <p class="store_name">R&Z CLOTHING STORE</p>
 
-<form method="POST" action="PHP_Functionality/login_page_funct.php" autocomplete="off">
+<form method="POST" action="./index.php" autocomplete="off">
 	<section id="login" style="margin-top: 25px;">
 		<div class="container">
 			<div class="row">

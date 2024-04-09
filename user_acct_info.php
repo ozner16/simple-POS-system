@@ -31,6 +31,17 @@
 <!-- PHP functionality -->
 <?php
     include("PHP_Functionality/user_acct_info_func.php");
+
+    //fetching the image from the database
+    if(!empty($row["photo"])){
+      
+      $mimetype = $row["mimetype"];
+      $photo = $row["photo"];
+
+      // Construct the data URI
+      $dataURI = 'data:' . $mimetype . ';base64,' . base64_encode($photo);
+  }
+
 ?>
 
 <style type="text/css">
@@ -54,9 +65,9 @@
       
           <div class="form_cont">   <!------ FIRST-A ( MAIN CONTAINER ) ---->
 
-          <form method="POST" action="PHP_Functionality/user_acct_info_func.php" autocomplete="off">
+          <form method="POST" action="<?php echo `'./user_acct_info.php?id=' + $receivedText`?>" autocomplete="off" enctype="multipart/form-data">
 
-                <img src = "<?php echo $row2['pic_path']; ?>" id="image1"/>
+                <img src = "<?php echo $dataURI; ?>" id="image1"/>
 
               <div class="textboxes_cont">
                 
@@ -67,11 +78,11 @@
                   <p class="calctxt" style="margin-left: 143px;">Department</p>
                   <br>
 
-                  <input type="text" name="First_Name" id="First_Name" value="<?php echo $row2['F_name']; ?>" class="textboxes" style=" margin-left: 30px;" disabled/>
-                  <input type="text" name="Middle_Name" id="Middle_Name" class="textboxes"  value="<?php echo $row2['M_name']; ?>" disabled />
-                  <input type="text" name="Last_Name" id="Last_Name" class="textboxes"  value="<?php echo $row2['L_name']; ?>" disabled/>
-                  <input type="text" name="suffix" id="suffix" class="textboxes" value="<?php echo $row2['suffix']; ?>" disabled/>
-                  <input type="text" name="department" id="department" class="textboxes" value="<?php echo $row2['dept']; ?>" disabled/>
+                  <input type="text" name="First_Name" id="First_Name" value="<?php echo $row['F_name']; ?>" class="textboxes" style=" margin-left: 30px;" disabled/>
+                  <input type="text" name="Middle_Name" id="Middle_Name" class="textboxes"  value="<?php echo $row['M_name']; ?>" disabled />
+                  <input type="text" name="Last_Name" id="Last_Name" class="textboxes"  value="<?php echo $row['L_name']; ?>" disabled/>
+                  <input type="text" name="suffix" id="suffix" class="textboxes" value="<?php echo $row['suffix']; ?>" disabled/>
+                  <input type="text" name="department" id="department" class="textboxes" value="<?php echo $row['dept']; ?>" disabled/>
                   <br>
                   <br>
 
@@ -80,9 +91,9 @@
                   <p class="calctxt" style="margin-left: 171px;">Password</p>
                   <br>
 
-                  <input type="text" name="designation" id="designation" class="textboxes1" style=" margin-left: 30px;" value="<?php echo $row2['designation']; ?>" disabled/>
-                  <input type="text" name="username" id="username" class="textboxes1" value="<?php echo $row3['username']; ?>"/>
-                  <input type="text" name="password" id="password" class="textboxes1" value="<?php echo $row3['user_password']; ?>"/>
+                  <input type="text" name="designation" id="designation" class="textboxes1" style=" margin-left: 30px;" value="<?php echo $row['designation']; ?>" disabled/>
+                  <input type="text" name="username" id="username" class="textboxes1" value="<?php echo $row['username']; ?>" disabled/>
+                  <input type="text" name="password" id="password" class="textboxes1" value="<?php echo $row['user_password']; ?>" disabled/>
                   <br>
                   <br>
 
@@ -93,9 +104,9 @@
                   <br>
 
                   <!-- <input type="text" name="confirm_password" id="confirm_password" class="textboxes2" style=" margin-left: 30px;"/> -->
-                  <input type="text" name="user_type" id="user_type" class="textboxes2" value="<?php echo $row3['user_type']; ?>" />
-                  <input type="text" name="user_status" id="user_status" class="textboxes2" value="<?php echo $row3['user_status']; ?>"/>
-                  <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $row2['emp_num']; ?>" />
+                  <input type="text" name="user_type" id="user_type" class="textboxes2" value="<?php echo $row['user_type']; ?>" />
+                  <input type="text" name="user_status" id="user_status" class="textboxes2" value="<?php echo $row['user_status']; ?>"/>
+                  <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $row['emp_num']; ?>" disabled/>
                   
               </div>
               
