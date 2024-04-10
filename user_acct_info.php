@@ -43,11 +43,22 @@
   }
 
 ?>
-
 <style type="text/css">
 
-    img{height: 228px;width: 227px;}
-
+    img{
+      height: 228px;
+      width: 227px;
+    }
+    
+    .firstMainCont form #userType, .firstMainCont form #userStatus{
+        padding: 5px 20px;
+    }
+    .firstMainCont form #userType{
+      margin-left: 30px;
+    }
+    .firstMainCont form #userStatus{
+      margin-left: 15px;
+    }
 </style>
 
 </head>
@@ -93,23 +104,64 @@
 
                   <input type="text" name="designation" id="designation" class="textboxes1" style=" margin-left: 30px;" value="<?php echo $row['designation']; ?>" disabled/>
                   <input type="text" name="username" id="username" class="textboxes1" value="<?php echo $row['username']; ?>" disabled/>
-                  <input type="text" name="password" id="password" class="textboxes1" value="<?php echo $row['user_password']; ?>" disabled/>
+                  <input type="text" name="password" id="password" class="textboxes1" value="<?php echo $row['user_password']; ?>" />
                   <br>
                   <br>
 
                   <!-- <p class="calctxt" style="margin-left: 30px;">Confirm Password</p> -->
-                  <p class="calctxt" style="margin-left: 12px;">User Type</p>
-                  <p class="calctxt" style="margin-left: 158px;">User Status</p>
-                  <p class="calctxt" style="margin-left: 147px;">Employee Number</p>
+                  <p class="calctxt" style="margin-left: 30px;">User Type</p>
+                  <p class="calctxt" style="margin-left: 100px;">User Status</p>
+                  <p class="calctxt" style="margin-left: 90px;">Employee Number</p>
                   <br>
 
-                  <!-- <input type="text" name="confirm_password" id="confirm_password" class="textboxes2" style=" margin-left: 30px;"/> -->
-                  <input type="text" name="user_type" id="user_type" class="textboxes2" value="<?php echo $row['user_type']; ?>" />
-                  <input type="text" name="user_status" id="user_status" class="textboxes2" value="<?php echo $row['user_status']; ?>"/>
-                  <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $row['emp_num']; ?>" disabled/>
+
+                  <!-- Fetch data from 'user_account_tbl' and 'emp_basic_info' table -->
+
+                  <?php   
+                
+                      // dropdown from user_type column
+                      //not equal
+                      $query_user_type = "SELECT * FROM user_account_tbl WHERE user_type != '$row[user_type]'";
+                      $query_user_type_result = $conn->query($query_user_type);
+
+                      //equal
+                      $query_user_type_equal = "SELECT * FROM user_account_tbl WHERE user_type = '$row[user_type]'";
+                      $query_user_type_result_equal = $conn->query($query_user_type_equal);
+                      $row_fetch_uqual = $query_user_type_result_equal->fetch_assoc();
+
+                      echo "<select name='userType' id='userType'>";
+                          echo "<option value='$row_fetch_uqual[user_id]'>$row_fetch_uqual[user_type]</option>";
+                          if($query_user_type_result->num_rows > 0){
+                              while($row_user_type_array = $query_user_type_result->fetch_assoc()){
+                                echo "<option value='$row_user_type_array[user_id]'>$row_user_type_array[user_type] </option>";
+                              }
+                          }            
+                      echo "</select>";
+                    
+
+                    // dropdown from user_status column
+                    //not equal data
+                    $query = "SELECT * FROM user_status WHERE user_status_name != $row[user_status_id];";
+                    $query_result_user_status = $conn->query($query);     
+                    
+                    //equal data
+                    $query_equal = "SELECT user_status_name FROM user_status WHERE user_status_name = $row[user_status_id];";
+                    $query_result_user_status_equal = $conn->query($query_equal); 
+                    $row_equal_fetch_data = $query_result_user_status_equal->fetch_assoc();
+                  
+                    echo "<select name='userStatus' id='userStatus'>";
+                        echo "<option value='$row[user_status_id]'>$row_equal_fetch_data[user_status_name]</option>";
+                        if($query_result_user_status->num_rows){
+                            while($row1 = $query_result_user_status->fetch_assoc()){
+                                echo "<option value='$row1[user_status_id]'> $row1[user_status_name] </option>";
+                            }
+                        }
+                    echo "</select>";
+                  ?>
+                  
+                  <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $receivedText ?>" disabled/>
                   
               </div>
-              
                 <br/>
                 <br/>
                 <br/>

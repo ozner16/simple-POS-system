@@ -41,29 +41,9 @@
     //connection
     include("PHP_Functionality/connection.php");
 
-      // //emp_basic_info;
-      // $query_select = "SELECT emp_num, F_name, M_name, L_name, dept, designation, suffix from emp_basic_info;";
-      // $result = mysqli_query($conn,$query_select);
-      // $resultCheck = mysqli_num_rows($result);
-
-      // //user_account_tbl
-      // $query_select1 = "SELECT username, user_type, user_status from user_account_tbl;";
-      // $result1 = mysqli_query($conn,$query_select1);
-      // $resultCheck1 = mysqli_num_rows($result1);
-
-      // if(($resultCheck > 0)  && ($resultCheck1 > 0) )
-      // {
-      //       while(($row = mysqli_fetch_assoc($result)) && ($row1 = mysqli_fetch_assoc($result1)))
-      //       {
-      //           echo " <tr>  <td>$row[emp_num]</td>  <td>$row[F_name] $row[M_name] $row[L_name] $row[suffix]</td>  <td>$row1[username]</td>  <td>$row1[user_type]</td> <td>$row1[user_status]</td> <td>$row[dept]</td> 
-      //           <td>$row[designation]</td>  <tr> ";
-
-      //       }
-
-      // }
-
-      $query = "SELECT * FROM emp_basic_info INNER JOIN user_account_tbl 
-      ON emp_basic_info.user_id = user_account_tbl.user_id;";
+      $query = "SELECT * FROM emp_basic_info INNER JOIN  user_account_tbl 
+      ON emp_basic_info.user_id = user_account_tbl.user_id 
+      INNER JOIN user_status ON user_account_tbl.user_status_id = user_status.user_status_id;";
       $query_result = $conn->query($query);
       
       if($query_result->num_rows > 0){
@@ -72,7 +52,7 @@
                         <td>$row[emp_num]</td>
                         <td>$row[F_name] $row[M_name] $row[L_name] $row[suffix]</td>
                         <td>$row[user_type]</td>
-                        <td>$row[user_status]</td>
+                        <td>$row[user_status_name]</td>
                         <td>$row[dept]</td>
                         <td>$row[designation]</td>
                       <tr>";
