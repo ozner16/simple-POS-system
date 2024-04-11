@@ -3,34 +3,21 @@
 function keypresshandler(event)
 {
      var charCode = event.keyCode;
-
      //Non-numeric character range
      if (charCode > 31 && (charCode < 48 || charCode > 57))
      {
-
         if(charCode == 46)
         {
-          
-            
-
             return true;
-
         }
-
         else
         {
             return false;
-
         }
-        
-
      }
-    
 }
 
-
 //button functions
-
 $(document).ready(function(){
 
      
@@ -423,33 +410,20 @@ $(document).ready(function(){
     //NEW BUTTON
     $("#new_button").click(function(){
 
-        var order_discount_options = document.getElementsByName('DiscountOption');
-
-
-        //order details
-        document.getElementById("ItemNameW3").value = "";
-        document.getElementById("QuanW3").value = "";
-        document.getElementById("PriceW3").value = "";
-        document.getElementById("DiscountAW3").value = "";
-        document.getElementById("DiscountedW3").value = "";
-        document.getElementById("CGivenW3").value = "";
-        document.getElementById("ChangeW3").value = "";
-    
-    
         //order discount options radio button
+        let order_discount_options = document.getElementsByName('DiscountOption');
         order_discount_options[0].checked = false;
         order_discount_options[1].checked = false;
         order_discount_options[2].checked = false;
         order_discount_options[3].checked = false;
     
+        // clearing all textboxes
+        let input_textBoxes = document.querySelectorAll('input[type=text]');
+
+        input_textBoxes.forEach(element => {
+                element.value = "";
+        });
     
-        //categories radio button
-        document.getElementById("Shirts").checked = false;
-        document.getElementById("Jeans").checked = false;
-      
-
-
-
     }); 
 
 
@@ -536,8 +510,69 @@ $("#Shirts").click(function(){
         document.getElementById('slot12').src = "assets/img/Shirts/Pieced Pacific Shirt.png";
         document.getElementById('txt12').innerHTML = "Pieced Pacific Shirt";      
 
-
 }); 
+
+
+// calculator numpads value
+
+let input_textBox = document.querySelectorAll("input[type=text]");
+
+$(input_textBox).click(function(e){
+     
+     let quantity = document.getElementById('QuanW3');
+     let cash_given = document.getElementById('CGivenW3');
+
+     if(e.target === quantity){
+        numPads(quantity, 1);
+        numPads(quantity, 2);
+        numPads(quantity, 3);
+        numPads(quantity, 4);
+        numPads(quantity, 5);
+        numPads(quantity, 6);
+        numPads(quantity, 7);
+        numPads(quantity, 8);
+        numPads(quantity, 9);
+        numPads(quantity, 0);
+     }
+     else if(e.target === cash_given){
+        numPads(cash_given, 1);
+        numPads(cash_given, 2);
+        numPads(cash_given, 3);
+        numPads(cash_given, 4);
+        numPads(cash_given, 5);
+        numPads(cash_given, 6);
+        numPads(cash_given, 7);
+        numPads(cash_given, 8);
+        numPads(cash_given, 9);
+        numPads(cash_given, 0);
+     }
+
+     function numPads(curr_textBox, value){
+        document.getElementById(value).onclick = function(){
+                curr_textBox.value += value;
+        }
+     }
+});
+
+
+
+
+
+
+
+
+
+// calculator ENTER button
+$("#enter_btn").click(function(){
+     
+        let quantity = document.getElementById('QuanW3');
+        console.log(quantity);
+
+        if(quantity.onfocus){
+                alert('wawawa');
+        }
+    
+});
 
 
 

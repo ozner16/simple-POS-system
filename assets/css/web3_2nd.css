@@ -121,6 +121,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
   padding: 15px 0;
+  width: 100vw;
+  height: 7vh;
 }
 
 #header .logo {
@@ -1289,10 +1291,11 @@ section {
 --------------------------------------------------------------*/
 
 
-.firstMainCont {height: 1080px;width: 100%;display: block;}
-
-.box1 {height: 112px;width: 180px;margin-top: 90px;
-  border: 1px solid rgb(95, 95, 95);border-top: none;}
+.firstMainCont {
+  height: 1040px;
+  width: 100%;
+  display: block;
+}
 
 .genButton {margin-left: 30px;}
 
@@ -1303,16 +1306,19 @@ section {
 .TextCat {font-size: 15px;}
 
 .SecMainCont {
-  height: 600px;
-  width: 100%;
+  height: 550px;
+  width: 100vw;
   display: block;
-  margin-top: 3%;
-  /* background-color: yellow; */
   position: relative;
+  /* background-color: #11dbcf; */
 }
 
-.ImageCont {height: 975px;width: 1175px;
-  float: left;margin-left: 245px;}
+.ImageCont {
+    height: 975px;
+    width: 1175px;
+    margin: 0 auto;
+    margin-top: 11vh;
+}
 
 .ImagePlat {height: 300px;width: 250px;
   text-align:center;display: inline-block;margin-left: 30px;}
@@ -1346,7 +1352,7 @@ input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
       width: 450px;
       display: inline-block;
       /* background-color: rgb(200, 142, 255); */
-      margin-left: 20%;
+      margin-left: 23%;
     }
 
     .formC {height: 410px;width: 430px; display: inline-block;margin-left: 50px;margin-top: 12px;}
@@ -1368,20 +1374,52 @@ input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
      .calcu_form2_inside {height: 90%;width: 100%;
       display: inline-block;}
 
-    .Calculator {height: 90%;width:600px;
-        display: inline-block;margin-left: 20px;}
+    .Calculator {
+        height: 90%;width:600px;
+        display: inline-block;
+        margin-left: 20px;
+    
+      }
 
-     .textC {font-size: 14px;display: inline-block;}
+     .textC {
+        font-size: 14px;
+        display: inline-block;
+      }
 
-     .calcRadioB {margin-left: 10px;}
-     .Calw3 {border: none;}
+     .calcRadioB {
+        margin-left: 10px;
+      }
+     .Calw3{
+      border: none;
+      margin-top: 2%;
+    }
      
      
 
-     .calc_numpad {height: 253px;width: 253px;display: inline-block;}
+     .calc_numpad {
+        height: fit-content;
+        width: fit-content;
+        display: inline-block;
+        /* background-color: #11dbcf; */
 
-     .Numpad_calculator {display: inline-block;height: 300px;width: 425px;margin-left: 63px;margin-top: 10px;}
-     .enterNumpad {height: 270px;width: 170px;float: right;}
+      }
+
+     .Numpad_calculator {
+        display: inline-block;
+        height: 300px;
+        width: 425px;
+        margin-left: 9%;
+        margin-top: 10px;
+        /* background-color: #11dbcf; */
+      }
+
+     .enterNumpad {
+        height: fit-content;
+        width: fit-content;
+        float: right;
+        /* background-color: #11dbcf; */
+        margin-top: 2px;
+      }
 
      .button {
      
@@ -1397,20 +1435,41 @@ input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
     }
         
     .button:active {
-     
       box-shadow: 0 5px #666;
       transform: translateY(3px);
     }
     
-     .enterCalc{height: 253px;width: 100%;font-size: 13px;background-color: rgb(78, 78, 252);border-radius: 3px; border: none;}
-     .enterCalc:active{background-color:rgb(78, 78, 252) ;}
+     .enterCalc{
+        height: 282px;
+        width: 200px;
+        font-size: 13px;
+        background-color: rgb(78, 78, 252);
+        border-radius: 3px; 
+        border: none;
+      }
 
-     .numpad{height: 60px;width: 60px;font-size: 15px;background-color:rgb(77, 72, 72);border-radius: 3px;
-      margin-bottom: 4px;border: none;}
+     .enterCalc:active{
+        background-color:rgb(78, 78, 252);
+      }
+
+     .numpad{
+        height: 65px;
+        width: 65px;
+        font-size: 15px;
+        background-color:rgb(77, 72, 72);
+        border-radius: 3px;
+        margin: 2px;
+        margin-bottom: 5px;
+        border: none;
+        
+      }
      
-      .numpad:active {background-color:rgb(77, 72, 72);}
+      .numpad:active {
+        background-color:rgb(77, 72, 72);}
 
-      .Mleft {margin-left: 12px;}
+      .Mleft {
+        margin-left: 12px;
+      }
 
    
 

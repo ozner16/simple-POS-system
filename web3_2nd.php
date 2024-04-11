@@ -35,7 +35,7 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo"><a href="./index.html">R&Z CLOTHING STORE</a></h1>
+      <h1 class="logo"><a href="./index.php">R&Z CLOTHING STORE</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -54,11 +54,6 @@
 <div class="firstMainCont">     <!------ FIRST MAIN CONTAINER ---->
 
         <div class="box1">        <!------ FIRST-A (MAIN CONTAINER) ---->
-
-            <h5>Categories</h5>
-            <input type="radio" name="gender" class="genButton"/> <label>Male</label>
-            <br/>
-            <input type="radio" name="gender" class="genButton"/> <label>Female</label>
 
               <div class="ImageCont">   <!------ FIRST-D (MAIN CONTAINER) ---->
 
@@ -172,53 +167,7 @@
 
         </div>    <!------ FIRST-A (MAIN CONTAINER) END ---->
 
-          <div class="lineCont">    <!------ FIRST-B (MAIN CONTAINER) ---->
-
-                <div class="catCont">   <!------ FIRST-C (MAIN CONTAINER) ---->
-
-                  <input type="radio" name="categories" style="margin-top: 40px;" class="Mleft"/> <label class="TextCat">New</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Trends</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Caps</label>
-                  <br/>
-                  
-                  <input type="radio" name="categories" class="Mleft" id="Shirts" checked/> <label class="TextCat">Shirts</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Tops</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Trucker & Outerwear</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Sweater & Sweatshirts</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft" id="Jeans"/> <label class="TextCat">Jeans</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Pants</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Shorts</label>
-                  <br/>
-                
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Footwear</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Swimwear</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Sportswear</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Kids</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Teens</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Accessories</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Collections</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Sales</label>
-                  <br/>
-                  <input type="radio" name="categories" class="Mleft"/> <label class="TextCat">Packages</label>
-
-                </div>    <!------ FIRST-C (MAIN CONTAINER) END ---->
-      
-          </div>    <!------ FIRST-B (MAIN CONTAINER) END ---->
+         
 
 </div>    <!------ FIRST MAIN CONTAINER END ----->
 <div class="SecMainCont">   <!------ SECOND MAIN CONTAINER ----->
@@ -277,39 +226,38 @@
                   <input type="radio" name="DiscountOption" class="calcRadioB" id="No_Discount" /> <p class="textC">  No Discount</p>
                   <br/>
                  
-                  <button class="button Calw3" style="width: 180px;height: 40px;background-color: rgb(78, 78, 252);color: white; margin-left: 27px;" id="calculate_change">CALCULATE CHANGE</button>
-                  <button class="button Calw3" style="width: 100px;height: 40px;background-color:rgb(255, 255, 88);color: black;" id="new_button">NEW</button>
-                  <button class="button Calw3" style="width: 100px; height: 40px;background-color:rgb(250, 61, 61);">CANCEL</button>
-                  <button class="button Calw3" style="width: 100px;height: 40px;background-color:rgb(90, 90, 90);" id="wew">CLOSE</button>
+                  <button class="button Calw3" style="width: 211px;height: 40px;background-color: rgb(78, 78, 252);color: white; margin-left: 9.2%; margin-right: 1.5%;" id="calculate_change">CALCULATE CHANGE</button>
+                  <button class="button Calw3" style="width: 200px;height: 40px;background-color: rgb(91, 252, 94);color: black;" id="new_button">NEW +</button>
+
                   <br/>
     
                   <div class="Numpad_calculator">   <!----  WHOLE CALCULATOR CONTAINER ---->
     
                         <div class="calc_numpad">   <!----  CALCULATOR NUMPAD ---->
-                              <button class="button numpad">7</button>
-                              <button class="button numpad">8</button>
-                              <button class="button numpad">9</button>
-                              <button class="button numpad">/</button>
+                              <button class="button numpad" id="7">7</button>
+                              <button class="button numpad" id="8">8</button>
+                              <button class="button numpad" id="9">9</button>
+                              
                               <br/>
-                              <button class="button numpad">4</button>
-                              <button class="button numpad">5</button>
-                              <button class="button numpad">6</button>
-                              <button class="button numpad">*</button>
+                              <button class="button numpad" id="4">4</button>
+                              <button class="button numpad" id="5">5</button>
+                              <button class="button numpad" id="6">6</button>
+                              
                               <br/>
-                              <button class="button numpad">1</button>
-                              <button class="button numpad">2</button>
-                              <button class="button numpad">3</button>
-                              <button class="button numpad">-</button>
+                              <button class="button numpad" id="1">1</button>
+                              <button class="button numpad" id="2">2</button>
+                              <button class="button numpad" id="3">3</button>
+                             
                               <br/>
                               <button class="button numpad">.</button>
-                              <button class="button numpad">0</button>
+                              <button class="button numpad" id="0">0</button>
                               <button class="button numpad">C</button>
-                              <button class="button numpad">+</button>
+                             
                         </div>  <!----  CALCULATOR NUMPAD END ---->
     
                             <div class="enterNumpad">   <!----  CALCULATOR 'ENTER' NUMPAD CONTAINER ---->
                                   
-                                  <button class="button enterCalc">ENTER</button>
+                                  <button class="button enterCalc" id="enter_btn">ENTER</button>
     
                             </div>  <!----  CALCULATOR 'ENTER' NUMPAD CONTAINER END ---->
     
