@@ -50,14 +50,17 @@
       width: 227px;
     }
     
-    .firstMainCont form #userType, .firstMainCont form #userStatus{
-        padding: 5px 20px;
-    }
     .firstMainCont form #userType{
       margin-left: 30px;
+      text-align: center;
+      font-size: 15px;
+      padding-top: 4px;
+      padding-bottom: 4px;
     }
     .firstMainCont form #userStatus{
       margin-left: 15px;
+      margin-right: 13px;
+      padding: 5px 20px;
     }
 </style>
 
@@ -110,7 +113,7 @@
 
                   <!-- <p class="calctxt" style="margin-left: 30px;">Confirm Password</p> -->
                   <p class="calctxt" style="margin-left: 30px;">User Type</p>
-                  <p class="calctxt" style="margin-left: 100px;">User Status</p>
+                  <p class="calctxt" style="margin-left: 143px;">User Status</p>
                   <p class="calctxt" style="margin-left: 90px;">Employee Number</p>
                   <br>
 
@@ -129,14 +132,15 @@
                       $query_user_type_result_equal = $conn->query($query_user_type_equal);
                       $row_fetch_uqual = $query_user_type_result_equal->fetch_assoc();
 
-                      echo "<select name='userType' id='userType'>";
-                          echo "<option value='$row_fetch_uqual[user_id]'>$row_fetch_uqual[user_type]</option>";
-                          if($query_user_type_result->num_rows > 0){
-                              while($row_user_type_array = $query_user_type_result->fetch_assoc()){
-                                echo "<option value='$row_user_type_array[user_id]'>$row_user_type_array[user_type] </option>";
-                              }
-                          }            
-                      echo "</select>";
+                      // echo "<select name='userType' id='userType' disabled>";
+                      //     echo "<option value='$row_fetch_uqual[user_type]'>$row_fetch_uqual[user_type]</option>";
+                      //     if($query_user_type_result->num_rows > 0){
+                      //         while($row_user_type_array = $query_user_type_result->fetch_assoc()){
+                      //           echo "<option value='$row_user_type_array[user_type]'>$row_user_type_array[user_type] </option>";
+                      //         }
+                      //     }            
+                      // echo "</select>";
+                      echo "<input type='text' name='userType'id='userType' value='$row_fetch_uqual[user_type]' disabled/>";
                     
 
                     // dropdown from user_status column
@@ -161,6 +165,7 @@
                   
                   <input type="text" name="emp_number" id="emp_number" class="textboxes2" value="<?php echo $receivedText ?>" disabled/>
                   
+                  
               </div>
                 <br/>
                 <br/>
@@ -169,9 +174,9 @@
 
               <div class="buttons">     <!------ FIRST-E ( MAIN CONTAINER ) ---->  
 
-                    <button class="button Calw3 DS_button" style="background-color:rgb(143, 153, 153);width: 120px;" name="cancel_btn" id="cancel_btn">CANCEL</button>
-                    <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px; margin-left: 10px;" name="delete_btn" >DELETE</button>
-                    <button class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 10px; margin-right: 8px;" name="update_btn" >UPDATE</button>
+                    <button class="button Calw3 DS_button" style="background-color:rgb(143, 153, 153);width: 120px;" name="back_btn" id="back_btn">BACK</button>
+                    <!-- <button class="button Calw3 DS_button" style="background-color:rgb(255, 85, 85);width: 120px; margin-left: 10px;" name="delete_btn" >DELETE</button> -->
+                    <button class="button Calw3 DS_button" style="background-color:rgb(92, 92, 255);width: 120px; margin-left: 20px; margin-right: 8px;" name="update_btn" >UPDATE</button>
 
               </div>     <!------ FIRST-E ( MAIN CONTAINER ) END ---->  
 

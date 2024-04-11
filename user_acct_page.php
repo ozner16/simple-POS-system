@@ -43,7 +43,7 @@
 
       $query = "SELECT * FROM emp_basic_info INNER JOIN  user_account_tbl 
       ON emp_basic_info.user_id = user_account_tbl.user_id 
-      INNER JOIN user_status ON user_account_tbl.user_status_id = user_status.user_status_id;";
+      INNER JOIN user_status ON user_account_tbl.user_status_id = user_status.user_status_id WHERE user_account_tbl.user_type != 'NONE';";
       $query_result = $conn->query($query);
       
       if($query_result->num_rows > 0){

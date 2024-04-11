@@ -24,37 +24,31 @@
             if(!empty($_POST['password'])){
                  
                   $user_pass = $_POST['password'];
-                  $user_type = $_POST['userType'];
                   $user_status = $_POST['userStatus'];
+                  
+                  $query_update = "UPDATE emp_basic_info INNER JOIN user_account_tbl 
+                  ON emp_basic_info.user_id = user_account_tbl.user_id SET user_account_tbl.user_password= '$user_pass', user_account_tbl.user_status_id= '$user_status'
+                  WHERE emp_basic_info.emp_num = $receivedText;";
 
-                  // $query_update = "UPDATE emp_basic_info INNER JOIN user_account_tbl 
-                  // ON emp_basic_info.user_id = user_account_tbl.user_id SET user_account_tbl.user_password = '$user_pass', user_account_tbl.user_type = '$user_type',
-                  // user_account_tbl.user_status = '$user_status' WHERE emp_basic_info.emp_num = '$receivedText';";
-
-                  // $query_result = $conn->query($query_update);
-                  // if($query_result){
-                  //       echo "Record successfully updated!";
-                  // }
-                  // else{
-                  //       echo "There's an error updating the record!";
-                  // }
-
+                  $query_update_result = $conn->query($query_update);
+                  
+                  if($query_update_result){
+                        echo "<script> alert('Updated the record succesfully!') </script>";
+                        echo "<script> window.location.href='./user_acct_page.php'; </script>"; 
+                  }
+                  else{
+                        echo "There's an error updating the record!";
+                  }
+             
             }
             else{
                   echo "Enter a Password!";
             }
-
-            // echo $_POST['userType'];
-
-            // echo "update";
       }
-      // if(isset($_POST['delete_btn'])){
-      //       echo "delete";
-      // }
-      // if(isset($_POST['cancel_btn'])){
-      //       echo "cancel";
-      // }
-
+      
+      if(isset($_POST['back_btn'])){
+            echo "<script> window.location.href='./user_acct_page.php'; </script>"; 
+      }
       
       
       
