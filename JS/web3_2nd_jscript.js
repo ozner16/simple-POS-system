@@ -533,8 +533,12 @@ $(input_textBox).click(function(e){
         numPads(quantity, 8);
         numPads(quantity, 9);
         numPads(quantity, 0);
-     }
-     else if(e.target === cash_given){
+        numPads(quantity, '.');
+        $('#c').off('click').on('click',function(){
+           e.target.value = '';
+        });
+        
+     }else if(e.target === cash_given){
         numPads(cash_given, 1);
         numPads(cash_given, 2);
         numPads(cash_given, 3);
@@ -545,6 +549,10 @@ $(input_textBox).click(function(e){
         numPads(cash_given, 8);
         numPads(cash_given, 9);
         numPads(cash_given, 0);
+        numPads(cash_given, '.');
+        $('#c').off('click').on('click',function(){
+            e.target.value = '';
+        });
      }
 
      function numPads(curr_textBox, value){
@@ -553,6 +561,7 @@ $(input_textBox).click(function(e){
         }
      }
 });
+
 
 
 

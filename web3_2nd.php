@@ -249,9 +249,9 @@
                               <button class="button numpad" id="3">3</button>
                              
                               <br/>
-                              <button class="button numpad">.</button>
+                              <button class="button numpad" id=".">.</button>
                               <button class="button numpad" id="0">0</button>
-                              <button class="button numpad">C</button>
+                              <button class="button numpad" id="c">C</button>
                              
                         </div>  <!----  CALCULATOR NUMPAD END ---->
     
