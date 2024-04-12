@@ -371,38 +371,44 @@ $(document).ready(function(){
     //CHANGE BUTTON
     $("#calculate_change").click(function(){
 
-       
-        //total quantity
-        var quantity = document.getElementById('QuanW3').value;
-        document.getElementById('TotalQW3').value = quantity;
+        let quantity_value_check = document.getElementById('QuanW3');
+        let cash_given_value_check = document.getElementById('CGivenW3');
+        let disc_amount_value_check = document.getElementById('DiscountAW3');
 
-
-
-        //total discount given
-        var discount_amount = document.getElementById('DiscountAW3').value;
-        document.getElementById('TDGivenW3').value = discount_amount;
-
-
-
-        //total discounted amount
-        var discounted_amount = document.getElementById('DiscountedW3').value;
-        document.getElementById('TDiscountedAW3').value = discounted_amount;
-
-
-        //change textbox
-        var cash_given = parseFloat(document.getElementById('CGivenW3').value);
-        var discounted_amount1 = parseFloat(document.getElementById('DiscountedW3').value);
-        var change = parseFloat(cash_given - discounted_amount1).toFixed(2);
-        document.getElementById('ChangeW3').value = change;
-
-        if(isNaN(change))
-        {
-
-                document.getElementById('ChangeW3').value ="";
-
-
+        if(quantity_value_check.value == ''){
+            alert('Enter the quantity');
         }
+        else if(disc_amount_value_check.value == ''){
+            alert('Please check one of the discount options');
+        }
+        else if(cash_given_value_check.value == ''){
+            alert('Enter Cash given');
+        }
+        else{
+           
+                //total quantity
+                var quantity = document.getElementById('QuanW3').value;
+                document.getElementById('TotalQW3').value = quantity;
 
+                //total discount given
+                var discount_amount = document.getElementById('DiscountAW3').value;
+                document.getElementById('TDGivenW3').value = discount_amount;
+
+                //total discounted amount
+                var discounted_amount = document.getElementById('DiscountedW3').value;
+                document.getElementById('TDiscountedAW3').value = discounted_amount;
+
+                //change textbox
+                var cash_given = parseFloat(document.getElementById('CGivenW3').value);
+                var discounted_amount1 = parseFloat(document.getElementById('DiscountedW3').value);
+                var change = parseFloat(cash_given - discounted_amount1).toFixed(2);
+                document.getElementById('ChangeW3').value = change;
+
+                if(isNaN(change))
+                {
+                        document.getElementById('ChangeW3').value ="";
+                }
+        }
 
     }); 
 
@@ -425,7 +431,6 @@ $(document).ready(function(){
         });
     
     }); 
-
 
 
 //CATEGORIES RADIO BUTTONS - CHANGE IMAGE
@@ -589,56 +594,48 @@ $(input_textBox).click(function(e){
 
 
 
-
-
-
-
-
-
-
 // calculator ENTER button
 $("#enter_btn").click(function(){
-     
-        let quantity = document.getElementById('QuanW3');
-        console.log(quantity);
 
-        if(quantity.onfocus){
-                alert('wawawa');
+        let quantity_value_check = document.getElementById('QuanW3');
+        let cash_given_value_check = document.getElementById('CGivenW3');
+        let disc_amount_value_check = document.getElementById('DiscountAW3');
+
+        if(quantity_value_check.value == ''){
+            alert('Enter the quantity');
         }
-    
+        else if(disc_amount_value_check.value == ''){
+            alert('Please check one of the discount options');
+        }
+        else if(cash_given_value_check.value == ''){
+            alert('Enter Cash given');
+        }
+        else{
+           
+                //total quantity
+                var quantity = document.getElementById('QuanW3').value;
+                document.getElementById('TotalQW3').value = quantity;
+
+                //total discount given
+                var discount_amount = document.getElementById('DiscountAW3').value;
+                document.getElementById('TDGivenW3').value = discount_amount;
+
+                //total discounted amount
+                var discounted_amount = document.getElementById('DiscountedW3').value;
+                document.getElementById('TDiscountedAW3').value = discounted_amount;
+
+                //change textbox
+                var cash_given = parseFloat(document.getElementById('CGivenW3').value);
+                var discounted_amount1 = parseFloat(document.getElementById('DiscountedW3').value);
+                var change = parseFloat(cash_given - discounted_amount1).toFixed(2);
+                document.getElementById('ChangeW3').value = change;
+
+                if(isNaN(change))
+                {
+                        document.getElementById('ChangeW3').value ="";
+                }
+        }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // END OF $(document).ready(function() ---
 });
