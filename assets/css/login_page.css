@@ -88,18 +88,29 @@
                         MY CODES
 	-------------------------------------------------- */
 
-    h1 {font-family: "Raleway", sans-serif;}
+h1 {
+    font-family: "Raleway", sans-serif;
+}
 
-    body{background-color: #f8f8f8;}
+body{
+    background-color: #f8f8f8;
+}
 
-    .store_name{font-size: 40px; font-family:cursive;text-align: center; }
+.store_name{
+    font-size: 40px; 
+    font-family:cursive;
+    text-align: center; 
+}
 
-    .cont1{margin-top: 90px;}
+.cont1{
+    margin-top: 90px;
+}
 
-    #btn-login:active {
-     
-        box-shadow: 0 2px #666;
-        transform: translateY(3px); outline: none;
-      }
+#btn-login:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(3px); outline: none;
+}
 
-      #btn-login{outline: none;}
+#btn-login{
+    outline: none;
+}

@@ -8,7 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html,body {height: 100%;width: 100%;margin: 0;}
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -1289,18 +1293,41 @@ section {
 --------------------------------------------------------------*/
 
 
-.firstMainCont {height: 1080px;width: 100%;display: block;}
+.firstMainCont {
+  height: 1080px;
+  width: 100%;
+  display: block;
+}
 
-.box1 {height: 112px;width: 180px;margin-top: 90px;
-  border: 1px solid rgb(95, 95, 95);border-top: none;}
+.box1 {
+  height: 112px;
+  width: 180px;
+  margin-top: 90px;
+  border: 1px solid rgb(95, 95, 95);
+  border-top: none;
+}
 
-.genButton {margin-left: 30px;}
+.genButton {
+  margin-left: 30px;
+}
 
-.lineCont {height: 895px;background-color: #bebebe;width: 3px;margin-left: 32px;margin-top: 10px;}
+.lineCont {
+  height: 895px;
+  background-color: #bebebe;
+  width: 3px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
 
-.catCont {height: 650px;width: 190px;margin-left: 10px;position: absolute;}
+.catCont {
+  height: 650px;
+  width: 190px;margin-left: 10px;
+  position: absolute;
+}
 
-.TextCat {font-size: 15px;}
+.TextCat {
+  font-size: 15px;
+}
 
 .SecMainCont {
   height: 930px;
@@ -1311,18 +1338,37 @@ section {
   margin-top: 2%;
 }
 
-.ImageCont {height: 975px;width: 1175px;
-  float: left;margin-left: 245px;}
+.ImageCont {
+  height: 975px;
+  width: 1175px;
+  float: left;
+  margin-left: 245px;
+}
 
-.ImagePlat {height: 300px;width: 250px;
-  text-align:center;display: inline-block;margin-left: 30px;}
+.ImagePlat {
+  height: 300px;
+  width: 250px;
+  text-align:center;
+  display: inline-block;
+  margin-left: 30px;
+}
 
-.images{height: 270px;width: 100%;border: 2px solid #bebebe;}
+.images{
+  height: 270px;
+  width: 100%;
+  border: 2px solid #bebebe;
+}
 
-.txtImage {margin-top: 7px;font-size: 13px;}
+.txtImage {
+  margin-top: 7px;
+  font-size: 13px;
+}
 
-input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
-
+input[type='text'] {
+  outline: none;
+  font-size: 15px;
+  padding: 1px;
+}
 
 /*--------------------------------------------------------------
 
@@ -1330,89 +1376,178 @@ input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
 
 --------------------------------------------------------------*/
 
+.Calcu_main_Cont {
+  height: 900px;
+  width: 1405px;
+}
 
+.Packages_cont {
+  height: 890px;
+  width: 455px;
+  /* background-color: wheat; */
+  display: inline-block;
+  margin-left: 20vw;
+}
 
+.formC {
+  height: 410px;
+  width: 350px; 
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 12px;
+}
 
-.Calcu_main_Cont {height: 900px;width: 1405px;}
+.calctxt {
+  font-size: 15px;
+  display: inline-block;
+}
 
-    .Packages_cont {
-      height: 890px;
-      width: 455px;
-      /* background-color: wheat; */
-      display: inline-block;
-      margin-left: 20vw;
-    }
-    .formC {height: 410px;width: 350px; display: inline-block;margin-left: 50px;margin-top: 12px;}
+.calcButton {
+  border-radius: 3px;
+  border: 1px solid #bebebe;
+  text-align: center;
+}
 
-    .calctxt {font-size: 15px;display: inline-block;}
+.Ord_Cont {
+  height: 890px;
+  width: 665px;
+  /* background-color: #11dbcf; */
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
 
-    .calcButton {border-radius: 3px;border: 1px solid #bebebe;text-align: center;}
-    
-    .Ord_Cont {
-      height: 890px;
-      width: 665px;
-      /* background-color: #11dbcf; */
-      display: inline-block;
-      position: absolute;
-      top: 0;
-    }
+.calcu_form2_inside {
+  height: 90%;
+  width: 100%;
+  display: inline-block;
+}
 
-     .calcu_form2_inside {height: 90%;width: 100%;
-      display: inline-block;}
+.Calculator {
+  height: 90%;
+  width:600px;
+  display: inline-block;
+  margin-left: 20px;
+}
 
-    .Calculator {height: 90%;width:600px;
-        display: inline-block;margin-left: 20px;}
+.textC {
+  font-size: 14px;
+  display: inline-block;
+}
 
-     .textC {font-size: 14px;display: inline-block;}
+.calcRadioB {
+  margin-left: 10px;
+}
 
-     .calcRadioB {margin-left: 10px;}
-     .Calw3 {border: none;}
+.Calw3 {
+  border: none;
+}
+
+.calc_numpad {
+  height: 253px;
+  width: 253px;
+  display: inline-block;
+}
+
+.Numpad_calculator {
+  display: inline-block;
+  height: 300px;
+  width: 425px;
+  margin-left: 63px;
+  margin-top: 10px;
+}
+
+.enterNumpad {
+  height: 270px;
+  width: 170px;
+  float: right;
+}
+
+.button {
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #535353;
+  border: none;
+  border-radius: 3px;
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+.enterCalc{
+  height: 253px;
+  width: 100%;
+  font-size: 13px;
+  background-color: rgb(78, 78, 252);
+  border-radius: 3px; 
+  border: none;
+}
+
+.enterCalc:active{
+  background-color:rgb(78, 78, 252);
+}
+
+.numpad{
+  height: 60px;
+  width: 60px;
+  font-size: 15px;
+  background-color:rgb(77, 72, 72);
+  border-radius: 3px;
+  margin-bottom: 4px;
+  border: none;
+}
+
+.numpad:active {
+  background-color:rgb(77, 72, 72);
+}
+
+.Mleft {
+  margin-left: 12px;
+}
+
+.FF_package {
+  margin-left: 55px;
+}
+
+.ord_img {
+  height: 250px;
+  width: 420px;
+  border: 1px solid #bebebe ;
+  border-radius: 1px;
+  margin-left: 25px;
+}
+
+.ord_img_cont {
+  display: inline-block;
+  text-align: center;
+}
      
-     
+#Order_summary {
+  font-size: 15px;
+  padding: 1px;
+  outline: none;
+  border: 1px solid #bebebe;
+}
 
-     .calc_numpad {height: 253px;width: 253px;display: inline-block;}
+.ord_bttn_cont {
+  height: 310px;
+  width: 180px;
+  float: right;
+  margin-right: 55px;
+  margin-top: 12px;
+}
 
-     .Numpad_calculator {display: inline-block;height: 300px;width: 425px;margin-left: 63px;margin-top: 10px;}
-     .enterNumpad {height: 270px;width: 170px;float: right;}
-
-     .button {
-     
-      font-size: 13px;
-      text-align: center;
-      cursor: pointer;
-      outline: none;
-      color: #fff;
-      background-color: #535353;
-      border: none;
-      border-radius: 3px;
-    
-    }
-        
-    .button:active {
-     
-      box-shadow: 0 5px #666;
-      transform: translateY(3px);
-    }
-    
-     .enterCalc{height: 253px;width: 100%;font-size: 13px;background-color: rgb(78, 78, 252);border-radius: 3px; border: none;}
-     .enterCalc:active{background-color:rgb(78, 78, 252) ;}
-
-     .numpad{height: 60px;width: 60px;font-size: 15px;background-color:rgb(77, 72, 72);border-radius: 3px;
-      margin-bottom: 4px;border: none;}
-     
-      .numpad:active {background-color:rgb(77, 72, 72);}
-
-      .Mleft {margin-left: 12px;}
-
-     
-.FF_package {margin-left: 55px;}
-
-.ord_img {height: 250px;width: 420px;border: 1px solid #bebebe ;border-radius: 1px;margin-left: 25px;}
-
-.ord_img_cont {display: inline-block;text-align: center;}
-     
-#Order_summary {font-size: 15px;padding: 1px;outline: none;border: 1px solid #bebebe;}
-
-.ord_bttn_cont  {height: 310px;width: 180px;float: right;margin-right: 55px;margin-top: 12px;}
-
-.OD_button {width: 160px;height: 40px;color: white; margin-left: 27px;margin-left: 0px;font-size: 11px;margin-bottom: 13px;}
+.OD_button {
+  width: 160px;
+  height: 40px;
+  color: white; 
+  margin-left: 27px;
+  margin-left: 0px;
+  font-size: 11px;
+  margin-bottom: 13px;
+}

@@ -8,7 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html,body {height: 100%;width: 100%;margin: 0;}
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -1297,13 +1301,28 @@ section {
   display: block;
 }
 
-.genButton {margin-left: 30px;}
+.genButton {
+  margin-left: 30px;
+}
 
-.lineCont {height: 895px;background-color: #bebebe;width: 3px;margin-left: 32px;margin-top: 10px;}
+.lineCont {
+  height: 895px;
+  background-color: #bebebe;
+  width: 3px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
 
-.catCont {height: 650px;width: 190px;margin-left: 10px;position: absolute;}
+.catCont {
+  height: 650px;
+  width: 190px;
+  margin-left: 10px;
+  position: absolute;
+}
 
-.TextCat {font-size: 15px;}
+.TextCat {
+  font-size: 15px;
+}
 
 .SecMainCont {
   height: 550px;
@@ -1320,21 +1339,36 @@ section {
     margin-top: 11vh;
 }
 
-.ImagePlat {height: 300px;width: 250px;
-  text-align:center;display: inline-block;margin-left: 30px;}
+.ImagePlat {
+  height: 300px;
+  width: 250px;
+  text-align:center;
+  display: inline-block;
+  margin-left: 30px;
+}
 
-.images{height: 270px;width: 100%;border: 2px solid #bebebe; cursor: pointer;}
+.images{
+  height: 270px;
+  width: 100%;
+  border: 2px solid #bebebe; 
+  cursor: pointer;
+}
 
 .images:active {
-     
   box-shadow: 0 2px #bebebe;
   transform: translateY(3px);
 }
 
-.txtImage {margin-top: 7px;font-size: 13px;}
+.txtImage {
+  margin-top: 7px;
+  font-size: 13px;
+}
 
-input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
-
+input[type='text'] {
+  outline: none;
+  font-size: 15px;
+  padding: 1px;
+}
 
 /*--------------------------------------------------------------
 
@@ -1342,137 +1376,141 @@ input[type='text'] {outline: none;font-size: 15px;padding: 1px;}
 
 --------------------------------------------------------------*/
 
+.Calcu_main_Cont {
+  height: 900px;
+  width: 1405px;
+}
 
+.calcu_form1 {
+  height: 490px;
+  width: 450px;
+  display: inline-block;
+  /* background-color: rgb(200, 142, 255); */
+  margin-left: 23%;
+}
 
+.formC {
+  height: 410px;
+  width: 430px; 
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 12px;
+}
 
-.Calcu_main_Cont {height: 900px;width: 1405px;}
+.calctxt {
+  font-size: 15px;
+  display: inline-block;
+}
 
-    .calcu_form1 {
-      height: 490px;
-      width: 450px;
-      display: inline-block;
-      /* background-color: rgb(200, 142, 255); */
-      margin-left: 23%;
-    }
+.calcButton {
+  border-radius: 3px;
+  border: 1px solid #bebebe;
+  text-align: center;
+}
 
-    .formC {height: 410px;width: 430px; display: inline-block;margin-left: 50px;margin-top: 12px;}
+.calcu_form2 {
+  height: 400px;
+  width: 560px;
+  /* background-color: #47aeff; */
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
 
-    .calctxt {font-size: 15px;display: inline-block;}
+.calcu_form2_inside {
+  height: 90%;
+  width: 100%;
+  display: inline-block;
+}
 
-    .calcButton {border-radius: 3px;border: 1px solid #bebebe;text-align: center;}
-    
+.Calculator {
+  height: 90%;width:600px;
+  display: inline-block;
+  margin-left: 20px;
+}
 
-    .calcu_form2 {
-      height: 400px;
-      width: 560px;
-      /* background-color: #47aeff; */
-      display: inline-block;
-      position: absolute;
-      top: 0;
-    }
+.textC {
+  font-size: 14px;
+  display: inline-block;
+}
 
-     .calcu_form2_inside {height: 90%;width: 100%;
-      display: inline-block;}
+.calcRadioB {
+  margin-left: 10px;
+}
 
-    .Calculator {
-        height: 90%;width:600px;
-        display: inline-block;
-        margin-left: 20px;
-    
-      }
+.Calw3{
+  border: none;
+  margin-top: 2%;
+}
 
-     .textC {
-        font-size: 14px;
-        display: inline-block;
-      }
+.calc_numpad {
+  height: fit-content;
+  width: fit-content;
+  display: inline-block;
+  /* background-color: #11dbcf; */
+}
 
-     .calcRadioB {
-        margin-left: 10px;
-      }
-     .Calw3{
-      border: none;
-      margin-top: 2%;
-    }
-     
-     
+.Numpad_calculator {
+  display: inline-block;
+  height: 300px;
+  width: 425px;
+  margin-left: 9%;
+  margin-top: 10px;
+  /* background-color: #11dbcf; */
+}
 
-     .calc_numpad {
-        height: fit-content;
-        width: fit-content;
-        display: inline-block;
-        /* background-color: #11dbcf; */
+.enterNumpad {
+  height: fit-content;
+  width: fit-content;
+  float: right;
+  /* background-color: #11dbcf; */
+  margin-top: 2px;
+}
 
-      }
+.button {
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #535353;
+  border: none;
+  border-radius: 3px;
+}
 
-     .Numpad_calculator {
-        display: inline-block;
-        height: 300px;
-        width: 425px;
-        margin-left: 9%;
-        margin-top: 10px;
-        /* background-color: #11dbcf; */
-      }
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
 
-     .enterNumpad {
-        height: fit-content;
-        width: fit-content;
-        float: right;
-        /* background-color: #11dbcf; */
-        margin-top: 2px;
-      }
+.enterCalc{
+  height: 282px;
+  width: 200px;
+  font-size: 13px;
+  background-color: rgb(78, 78, 252);
+  border-radius: 3px; 
+  border: none;
+}
 
-     .button {
-     
-      font-size: 13px;
-      text-align: center;
-      cursor: pointer;
-      outline: none;
-      color: #fff;
-      background-color: #535353;
-      border: none;
-      border-radius: 3px;
-    
-    }
-        
-    .button:active {
-      box-shadow: 0 5px #666;
-      transform: translateY(3px);
-    }
-    
-     .enterCalc{
-        height: 282px;
-        width: 200px;
-        font-size: 13px;
-        background-color: rgb(78, 78, 252);
-        border-radius: 3px; 
-        border: none;
-      }
+.enterCalc:active{
+  background-color:rgb(78, 78, 252);
+}
 
-     .enterCalc:active{
-        background-color:rgb(78, 78, 252);
-      }
+.numpad{
+  height: 65px;
+  width: 65px;
+  font-size: 15px;
+  background-color:rgb(77, 72, 72);
+  border-radius: 3px;
+  margin: 2px;
+  margin-bottom: 5px;
+  border: none;
+}
 
-     .numpad{
-        height: 65px;
-        width: 65px;
-        font-size: 15px;
-        background-color:rgb(77, 72, 72);
-        border-radius: 3px;
-        margin: 2px;
-        margin-bottom: 5px;
-        border: none;
-        
-      }
-     
-      .numpad:active {
-        background-color:rgb(77, 72, 72);}
+.numpad:active {
+  background-color:rgb(77, 72, 72);
+}
 
-      .Mleft {
-        margin-left: 12px;
-      }
-
-   
-
-     
-
-     
+.Mleft {
+  margin-left: 12px;
+}

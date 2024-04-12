@@ -8,7 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html,body {height: 100%;width: 100%;margin: 0;}
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -1289,44 +1293,115 @@ section {
 --------------------------------------------------------------*/
 
 
-.firstMainCont {height: 1750px;width: 100%;}
+.firstMainCont {
+  height: 1750px;
+  width: 100%;
+}
 
-.box1 {height: 112px;width: 180px;margin-top: 90px;
-  border: 1px solid rgb(95, 95, 95);border-top: none;}
+.box1 {
+  height: 112px;
+  width: 180px;
+  margin-top: 90px;
+  border: 1px solid rgb(95, 95, 95);
+  border-top: none;
+}
 
-.genButton {margin-left: 30px;}
+.genButton {
+  margin-left: 30px;
+}
 
-.lineCont {height: 895px;background-color: #bebebe;width: 3px;margin-left: 32px;margin-top: 10px;}
+.lineCont {
+  height: 895px;
+  background-color: #bebebe;
+  width: 3px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
 
-.catCont {height: 650px;width: 190px;margin-left: 10px;position: absolute;}
+.catCont {
+  height: 650px;
+  width: 190px;
+  margin-left: 10px;
+  position: absolute;
+}
 
-.TextCat {font-size: 15px;}
+.TextCat {
+  font-size: 15px;
+}
 
-.SecMainCont {height: 550px;width: 100%;background-color: #86f1b8;}
+.SecMainCont {
+  height: 550px;
+  width: 100%;
+  background-color: #86f1b8;
+}
 
-.ImageCont {height: 975px;width: 1175px;
-  float: left;margin-left: 245px;}
+.ImageCont {
+  height: 975px;
+  width: 1175px;
+  float: left;
+  margin-left: 245px;
+}
 
-.ImagePlat {height: 300px;width: 250px;
-  text-align:center;display: inline-block;margin-left: 30px;}
+.ImagePlat {
+  height: 300px;
+  width: 250px;
+  text-align:center;
+  display: inline-block;
+  margin-left: 30px;
+}
 
-.images{height: 270px;width: 100%;border: 2px solid #bebebe;}
+.images{
+  height: 270px;
+  width: 100%;
+  border: 2px solid #bebebe;
+}
 
-.txtImage {margin-top: 7px;font-size: 13px;}
+.txtImage {
+  margin-top: 7px;
+  font-size: 13px;
+}
 
-input[type='text'] {outline: none;font-size: 16px;padding: 2px;}
+input[type='text'] {
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-input[type='date'] {outline: none;font-size: 16px;padding: 2px;}
+input[type='date'] {
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-#gender{outline: none;font-size: 16px;padding: 2px;}
+#gender{
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-#nationality{outline: none;font-size: 16px;padding: 2px;}
+#nationality{
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-#civil_status{outline: none;font-size: 16px;padding: 2px;}
+#civil_status{
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-#Qualified_Dep_Status{outline: none;font-size: 16px;padding: 2px;}
+#Qualified_Dep_Status{
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
-.outline{outline: none;font-size: 16px;padding: 2px;}
+.outline{
+  outline: none;
+  font-size: 16px;
+  padding: 2px;
+}
 
 
 
