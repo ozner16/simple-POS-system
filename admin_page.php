@@ -62,8 +62,8 @@ a{
 <div class="sidenav">
   <h4 style="color:white; margin-left:20px;font-size:20px;">R&Z CLOTHING STORE</h4>
   <a id="home">Home</a>
-  <a id="employee">Employee</a>
-  <a id="payroll">Payroll</a>
+  <a id="employee">Employee List</a>
+  <a id="payroll">Employee Payroll</a>
   <a id="PoS_B">Point of Sale</a>
   <a id="user_acct">User Account</a>
   <a id="logout" href="./index.php">Logout</a>

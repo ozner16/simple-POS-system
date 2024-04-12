@@ -59,13 +59,6 @@
             }
  
       }
-
-      else
-      {
-        echo "0 results";
-
-      }
-
 ?>
 
 </tbody>
@@ -78,10 +71,6 @@
 <script>
 $(document).ready(function(){
 
-//   $('table tr').on('click', 'td', function () {
-//    window.location.href = "./web2.php";
-// })
-
 let table =  document.getElementById('tbl-data');
 
 table.addEventListener("click", function(e){
@@ -93,9 +82,6 @@ table.addEventListener("click", function(e){
      window.location.href = "./web2.php?id=" + encodedText;
 
 });
-
-
-
 
 });
 </script>
