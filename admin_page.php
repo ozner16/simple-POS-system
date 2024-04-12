@@ -65,7 +65,7 @@ a{
   <a id="employee">Employee List</a>
   <a id="payroll">Employee Payroll</a>
   <a id="PoS_B">Point of Sale</a>
-  <a id="user_acct">User Account</a>
+  <a id="user_acct">User Accounts</a>
   <a id="logout" href="./index.php">Logout</a>
 </div>
 

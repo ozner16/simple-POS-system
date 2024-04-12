@@ -9,22 +9,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
-
-  th {background-color: #3ba9f1;}
-  tr{cursor: pointer;}
- 
-  body{
-  overflow: hidden;
-  padding: 20px;
-}
-
+    th {background-color: #3ba9f1;}
+    tr{cursor: pointer;}
+  
+    body{
+    overflow: hidden;
+    padding: 20px;
+    }
+    #h2{
+      cursor: pointer;
+    }
 </style>
 
 </head>
 <body>
 
 
-<h2>Employees Payroll List</h2>
+<h2 id="h2">Employees Payroll List</h2>
 <br>
 <table class="table table-bordered table-hover">
 <thead>
@@ -60,7 +61,6 @@
  
       }
 ?>
-
 </tbody>
 
 </table>
@@ -82,6 +82,10 @@ table.addEventListener("click", function(e){
      window.location.href = "./web2.php?id=" + encodedText;
 
 });
+
+  $('#h2').click(function(){
+    window.location.href = "./index.php";
+  });
 
 });
 </script>
