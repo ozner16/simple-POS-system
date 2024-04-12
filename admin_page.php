@@ -64,8 +64,7 @@ a{
   <a id="home">Home</a>
   <a id="employee">Employee</a>
   <a id="payroll">Payroll</a>
-  <a id="PoS_A">Point of Sale A</a>
-  <a id="PoS_B">Point of Sale B</a>
+  <a id="PoS_B">Point of Sale</a>
   <a id="user_acct">User Account</a>
   <a id="logout" href="./index.php">Logout</a>
 </div>
@@ -92,10 +91,6 @@ $(document).ready(function(){
 
   $("#payroll").click(function() {
 		document.getElementById('frame').src = "./Employee_payroll_list.php";
-	});
-
-  $("#PoS_A").click(function() {
-		document.getElementById('frame').src = "./web1.php";
 	});
 
   $("#PoS_B").click(function() {

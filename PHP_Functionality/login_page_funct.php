@@ -36,10 +36,7 @@
                         if($row['user_type'] == "Admin"){
                               echo "<script> window.location.href='./admin_page.php'; </script>";
                         }
-                        elseif($row['user_type'] == "Cashier1"){
-                              echo "<script> window.location.href='./web1.php'; </script>";
-                        }
-                        elseif($row['user_type'] == "Cashier2"){
+                        elseif($row['user_type'] == "Cashier"){
                               echo "<script> window.location.href='./web3_2nd.php'; </script>";
                         }
                         elseif($row['user_type'] == "Accounting_Staff"){
