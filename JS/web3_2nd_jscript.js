@@ -520,7 +520,15 @@ let input_textBox = document.querySelectorAll("input[type=text]");
 $(input_textBox).click(function(e){
      
      let quantity = document.getElementById('QuanW3');
+     let disc_amount = document.getElementById('DiscountAW3');
+     let discounted_amount = document.getElementById('DiscountedW3');
+     let total_quantity = document.getElementById('TotalQW3');
+     let total_disc_given = document.getElementById('TDGivenW3');
+     let total_discounted_amount = document.getElementById('TDiscountedAW3');
+
      let cash_given = document.getElementById('CGivenW3');
+     let cash_change = document.getElementById('ChangeW3');
+
 
      if(e.target === quantity){
         numPads(quantity, 1);
@@ -535,7 +543,14 @@ $(input_textBox).click(function(e){
         numPads(quantity, 0);
         numPads(quantity, '.');
         $('#c').off('click').on('click',function(){
-           e.target.value = '';
+           quantity.value = '';
+           disc_amount.value = '';
+           discounted_amount.value = '';
+           total_quantity.value = '';
+           total_disc_given.value = '';
+           total_discounted_amount.value = '';
+           cash_change.value = '';
+           radioButtons(false);
         });
         
      }else if(e.target === cash_given){
@@ -551,14 +566,24 @@ $(input_textBox).click(function(e){
         numPads(cash_given, 0);
         numPads(cash_given, '.');
         $('#c').off('click').on('click',function(){
-            e.target.value = '';
+           cash_given.value = '';
+           cash_change.value = '';
         });
      }
 
+     // numpads show value
      function numPads(curr_textBox, value){
         document.getElementById(value).onclick = function(){
                 curr_textBox.value += value;
         }
+     }
+
+     // uncheck radion buttons
+     function radioButtons(value){
+        document.getElementById('Senior_Citizen_Rbutton').checked = value;
+        document.getElementById('with_discount_card_Rbutton').checked = value;
+        document.getElementById('Employee_Discount').checked = value;
+        document.getElementById('No_Discount').checked = value;
      }
 });
 
