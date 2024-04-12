@@ -10,13 +10,13 @@
 
    <style>
 
-      th {background-color: #3ba9f1;}
-      tr{cursor: pointer;}
+        th {background-color: #3ba9f1;}
+        tr{cursor: pointer;}
 
-      body{
-          overflow: auto;
-          padding: 20px;
-      }
+        body{
+            overflow: auto;
+            padding: 20px;
+        }
 
     </style>
 

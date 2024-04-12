@@ -13,9 +13,7 @@
 	<script src="JS/login_page.js"></script>
 </head>
 <?php 
-
 	include "./PHP_Functionality/login_page_funct.php";
-
 ?>
 
 <body>

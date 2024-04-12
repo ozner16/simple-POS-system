@@ -39,11 +39,11 @@
    
 ?>
 
-<style type="text/css">
+  <style type="text/css">
 
-    img{height: 228px;width: 227px;}
-
-</style>
+      img{height: 228px;width: 227px;}
+      
+  </style>
 
 </head>
 

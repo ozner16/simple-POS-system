@@ -41,13 +41,11 @@
       $dataURI = 'data:' . $mimetype . ';base64,' . base64_encode($photo);
   }
 ?>
+      <style type="text/css">
 
-<style type="text/css">
+            img{height: 228px;width: 227px;}
 
-    img{height: 228px;width: 227px;}
-
-</style>
-
+      </style>
 </head>
 
 <body>

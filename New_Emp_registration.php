@@ -34,11 +34,9 @@
     include("PHP_Functionality/New_Emp_registration_PHP_funct.php");
 ?>
 
-<style type="text/css">
-
-    img{height: 228px;width: 227px;}
-
-</style>
+  <style type="text/css">
+      img{height: 228px;width: 227px;}
+  </style>
 
 </head>
 

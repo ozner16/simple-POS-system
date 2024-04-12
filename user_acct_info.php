@@ -43,26 +43,25 @@
   }
 
 ?>
-<style type="text/css">
-
-    img{
-      height: 228px;
-      width: 227px;
-    }
-    
-    .firstMainCont form #userType{
-      margin-left: 30px;
-      text-align: center;
-      font-size: 15px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
-    .firstMainCont form #userStatus{
-      margin-left: 15px;
-      margin-right: 13px;
-      padding: 5px 20px;
-    }
-</style>
+  <style type="text/css">
+      img{
+        height: 228px;
+        width: 227px;
+      }
+      
+      .firstMainCont form #userType{
+        margin-left: 30px;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      .firstMainCont form #userStatus{
+        margin-left: 15px;
+        margin-right: 13px;
+        padding: 5px 20px;
+      }
+  </style>
 
 </head>
 
